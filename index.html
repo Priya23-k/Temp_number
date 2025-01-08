@@ -28,8 +28,9 @@
         <button class="btn btn-outline-custom btn-lg fs-6"><i class="fa-solid fa-video m-1"></i>Watch video</button>
       </div>
       <div class="col-md-6">
-        <div class="form-card w-75 p-5 m-4 ms-auto">
+        <div class="form-card mx-auto p-4 mt-4 w-75">
           <form>
+            <!-- Service Field -->
             <div class="mb-3">
               <label for="service" class="form-label">Service</label>
               <div class="input-group">
@@ -43,11 +44,13 @@
                 </select>
               </div>
             </div>
+        
+            <!-- Country Field -->
             <div class="mb-3">
               <label for="country" class="form-label">Country</label>
               <div class="input-group">
                 <span class="input-group-text">
-                  <i class="fa-solid fa-earth-americas"></i>
+                  <i class="fa-solid fa-earth-americas"></i> <!-- Icon for Country -->
                 </span>
                 <select id="country" class="form-select">
                   <option selected>Country</option>
@@ -56,9 +59,14 @@
                 </select>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary-custom text-white	btn-lg w-100 fs-6 ">Get Number →</button>
+        
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary-custom text-white btn-lg w-100 fs-6">
+              Get Number →
+            </button>
           </form>
         </div>
+        
       </div>
     </div>
   </div>
@@ -347,145 +355,146 @@
     </div>
   </div>
 <!-- service and country -->
-  <div class="container my-5 py-5">
-    <h2 class="text-center fw-bold">Available Services and Countries</h2>
-    <p class="text-center text-muted">
+<div class="container my-5 py-5">
+  <h2 class="text-center fw-bold">Available Services and Countries</h2>
+  <p class="text-center text-muted">
       Use temporary disposable numbers for SMS verification in different countries and for various services.
-    </p>
+  </p>
 
-    <!-- Tabs -->
-    <ul class="nav nav-tabs justify-content-center" id="tabMenu">
+  <!-- Tabs -->
+  <ul class="nav nav-tabs justify-content-center" id="tabMenu">
       <li class="nav-item">
-        <button class="nav-link " id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
+          <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
       </li>
       <li class="nav-item">
-        <button class="nav-link active" id="countries-tab" data-bs-toggle="tab" data-bs-target="#countries" type="button">Countries</button>
+          <button class="nav-link active" id="countries-tab" data-bs-toggle="tab" data-bs-target="#countries" type="button">Countries</button>
       </li>
-    </ul>
+  </ul>
 
-    <!-- Tab Content -->
-    <div class="tab-content">
+  <!-- Tab Content -->
+  <div class="tab-content">
       <!-- Services Table -->
       <div class="tab-pane fade" id="services" role="tabpanel">
-        <table class="table table-bordered text-center">
-          <tbody class="service" style="cursor: pointer;">
-            <tr>
-                <td class="service-wh" onclick="window.location.href='/routes/service.html?id=2'">
-                    <img src="/assets/image/icon/whatsapp.png"> WhatsApp
-                </td>
-                <td class="service-te" onclick="window.location.href='/routes/service.html?id=2'">
-                    <img src="/assets/image/icon/telegram.png"> Telegram
-                </td>
-                <td class="service-fa" onclick="window.location.href='/routes/service.html?id=3'">
-                    <img src="/assets/image/icon/facebook.png"> Facebook/Meta
-                </td>
-            </tr>
-            <tr>
-                <td class="service-go" onclick="window.location.href='/routes/service.html?id=4'">
-                    <img src="/assets/image/icon/google.png"> Google/Gmail
-                </td>
-                <td class="service-pl" onclick="window.location.href='/routes/service.html?id=5'">
-                    <img src="/assets/image/icon/pof_com.png"> Plenty of Fish
-                </td>
-                <td class="service-pa" onclick="window.location.href='/routes/service.html?id=6'">
-                    <img src="/assets/image/icon/paypal.png"> PayPal
-                </td>
-            </tr>
-            <tr>
-                <td class="service-ub" onclick="window.location.href='/routes/service.html?id=7'">
-                    <img src="/assets/image/icon/uber.png"> Uber
-                </td>
-                <td class="service-ti" onclick="window.location.href='/routes/service.html?id=8'">
-                    <img src="/assets/image/icon/tiktok.png"> TikTok
-                </td>
-                <td class="service-in" onclick="window.location.href='/routes/service.html?id=9'">
-                    <img src="/assets/image/icon/instagram.png"> Instagram
-                </td>
-            </tr>
-            <tr>
-                <td class="service-ge" onclick="window.location.href='/routes/service.html?id=10'">
-                    <img src="/assets/image/icon/getir.png"> Getir
-                </td>
-                <td class="service-ne" onclick="window.location.href='/routes/service.html?id=11'">
-                    <img src="/assets/image/icon/netflix.png"> Netflix
-                </td>
-                <td class="service-di" onclick="window.location.href='/routes/service.html?id=12'">
-                    <img src="/assets/image/icon/discord.png"> Discord
-                </td>
-            </tr>            
-          </tbody>
-        </table>
+          <table class="table table-bordered text-center">
+              <tbody class="service">
+                  <tr>
+                      <td class="service-wh" onclick="window.location.href='/routes/service.html?id=1'">
+                          <img src="/assets/image/icon/whatsapp.png" class="img-fluid"> <br> WhatsApp
+                      </td>
+                      <td class="service-te" onclick="window.location.href='/routes/service.html?id=2'">
+                          <img src="/assets/image/icon/telegram.png" class="img-fluid"> <br> Telegram
+                      </td>
+                      <td class="service-fa" onclick="window.location.href='/routes/service.html?id=3'">
+                          <img src="/assets/image/icon/facebook.png" class="img-fluid"> <br> Facebook/Meta
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="service-go" onclick="window.location.href='/routes/service.html?id=4'">
+                          <img src="/assets/image/icon/google.png" class="img-fluid"> <br> Google/Gmail
+                      </td>
+                      <td class="service-pl" onclick="window.location.href='/routes/service.html?id=5'">
+                          <img src="/assets/image/icon/pof_com.png" class="img-fluid"> <br> Plenty of Fish
+                      </td>
+                      <td class="service-pa" onclick="window.location.href='/routes/service.html?id=6'">
+                          <img src="/assets/image/icon/paypal.png" class="img-fluid"> <br> PayPal
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="service-ub" onclick="window.location.href='/routes/service.html?id=7'">
+                          <img src="/assets/image/icon/uber.png" class="img-fluid"> <br> Uber
+                      </td>
+                      <td class="service-ti" onclick="window.location.href='/routes/service.html?id=8'">
+                          <img src="/assets/image/icon/tiktok.png" class="img-fluid"> <br> TikTok
+                      </td>
+                      <td class="service-in" onclick="window.location.href='/routes/service.html?id=9'">
+                          <img src="/assets/image/icon/instagram.png" class="img-fluid"> <br> Instagram
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="service-ge" onclick="window.location.href='/routes/service.html?id=10'">
+                          <img src="/assets/image/icon/getir.png" class="img-fluid"> <br> Getir
+                      </td>
+                      <td class="service-ne" onclick="window.location.href='/routes/service.html?id=11'">
+                          <img src="/assets/image/icon/netflix.png" class="img-fluid"> <br> Netflix
+                      </td>
+                      <td class="service-di" onclick="window.location.href='/routes/service.html?id=12'">
+                          <img src="/assets/image/icon/discord.png" class="img-fluid"> <br> Discord
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
       </div>
+
       <!-- Countries Table -->
       <div class="tab-pane fade show active" id="countries" role="tabpanel">
-        <table class="table table-bordered text-center">
-          <tbody class="country" style="cursor: pointer;">
-            <tr>
-                <td class="country-uk" onclick="window.location.href='/routes/country.html?id=1'">
-                    <img src="/assets/image/icon/country/uk.png"> United Kingdom
-                </td>
-                <td class="country-usa" onclick="window.location.href='/routes/country.html?id=2'">
-                    <img src="/assets/image/icon/country/us.png"> United States
-                </td>
-                <td class="country-india" onclick="window.location.href='/routes/country.html?id=3'">
-                    <img src="/assets/image/icon/country/in.png"> India
-                </td>
-            </tr>
-            <tr>
-                <td class="country-brazil" onclick="window.location.href='/routes/country.html?id=4'">
-                    <img src="/assets/image/icon/country/br.png"> Brazil
-                </td>
-                <td class="country-malaysia" onclick="window.location.href='/routes/country.html?id=5'">
-                    <img src="/assets/image/icon/country/my.png"> Malaysia
-                </td>
-                <td class="country-russia" onclick="window.location.href='/routes/country.html?id=6'">
-                    <img src="/assets/image/icon/country/ru.png"> Russia
-                </td>
-            </tr>
-            <tr>
-                <td class="country-italy" onclick="window.location.href='/routes/country.html?id=7'">
-                    <img src="/assets/image/icon/country/it.png"> Italy
-                </td>
-                <td class="country-china" onclick="window.location.href='/routes/country.html?id=8'">
-                    <img src="/assets/image/icon/country/cn.png"> China
-                </td>
-                <td class="country-mexico" onclick="window.location.href='/routes/country.html?id=9'">
-                    <img src="/assets/image/icon/country/mx.png"> Mexico
-                </td>
-            </tr>
-            <tr>
-                <td class="country-turkey" onclick="window.location.href='/routes/country.html?id=10'">
-                    <img src="/assets/image/icon/country/tr.png"> Turkey
-                </td>
-                <td class="country-france" onclick="window.location.href='/routes/country.html?id=11'">
-                    <img src="/assets/image/icon/country/fr.png"> France
-                </td>
-                <td class="country-germany" onclick="window.location.href='/routes/country.html?id=12'">
-                    <img src="/assets/image/icon/country/ge.png"> Germany
-                </td>
-            </tr>
-            <tr>
-                <td class="country-spain" onclick="window.location.href='/routes/country.html?id=13'">
-                    <img src="/assets/image/icon/country/sp.png"> Spain
-                </td>
-                <td class="country-netherlands" onclick="window.location.href='/routes/country.html?id=14'">
-                    <img src="/assets/image/icon/country/nl.png"> Netherlands
-                </td>
-                <td class="country-australia" onclick="window.location.href='/routes/country.html?id=15'">
-                    <img src="/assets/image/icon/country/at.png"> Australia
-                </td>
-            </tr>
-        </tbody>
-        </table>
-      </div>    
-    </div>
-    
-
-    <!-- Search Box -->
-    <div class="search-box mx-auto">
-      <button type="button" class="btn w-25 h-25 mx-auto" style="background-color: #9948c5; color: white;"><i class="fa-solid fa-magnifying-glass p-2"></i>Search for more...</button>
-    </div>
+          <table class="table table-bordered text-center">
+              <tbody class="country">
+                  <tr>
+                      <td class="country-uk" onclick="window.location.href='/routes/country.html?id=1'">
+                          <img src="/assets/image/icon/country/uk.png" class="img-fluid"> <br> United Kingdom
+                      </td>
+                      <td class="country-usa" onclick="window.location.href='/routes/country.html?id=2'">
+                          <img src="/assets/image/icon/country/us.png" class="img-fluid"> <br> United States
+                      </td>
+                      <td class="country-india" onclick="window.location.href='/routes/country.html?id=3'">
+                          <img src="/assets/image/icon/country/in.png" class="img-fluid"> <br> India
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="country-brazil" onclick="window.location.href='/routes/country.html?id=4'">
+                          <img src="/assets/image/icon/country/br.png" class="img-fluid"> <br> Brazil
+                      </td>
+                      <td class="country-malaysia" onclick="window.location.href='/routes/country.html?id=5'">
+                          <img src="/assets/image/icon/country/my.png" class="img-fluid"> <br> Malaysia
+                      </td>
+                      <td class="country-russia" onclick="window.location.href='/routes/country.html?id=6'">
+                          <img src="/assets/image/icon/country/ru.png" class="img-fluid"> <br> Russia
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="country-italy" onclick="window.location.href='/routes/country.html?id=7'">
+                          <img src="/assets/image/icon/country/it.png" class="img-fluid"> <br> Italy
+                      </td>
+                      <td class="country-china" onclick="window.location.href='/routes/country.html?id=8'">
+                          <img src="/assets/image/icon/country/cn.png" class="img-fluid"> <br> China
+                      </td>
+                      <td class="country-mexico" onclick="window.location.href='/routes/country.html?id=9'">
+                          <img src="/assets/image/icon/country/mx.png" class="img-fluid"> <br> Mexico
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="country-turkey" onclick="window.location.href='/routes/country.html?id=10'">
+                          <img src="/assets/image/icon/country/tr.png" class="img-fluid"> <br> Turkey
+                      </td>
+                      <td class="country-france" onclick="window.location.href='/routes/country.html?id=11'">
+                          <img src="/assets/image/icon/country/fr.png" class="img-fluid"> <br> France
+                      </td>
+                      <td class="country-germany" onclick="window.location.href='/routes/country.html?id=12'">
+                          <img src="/assets/image/icon/country/ge.png" class="img-fluid"> <br> Germany
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="country-spain" onclick="window.location.href='/routes/country.html?id=13'">
+                          <img src="/assets/image/icon/country/sp.png" class="img-fluid"> <br> Spain
+                      </td>
+                      <td class="country-netherlands" onclick="window.location.href='/routes/country.html?id=14'">
+                          <img src="/assets/image/icon/country/nl.png" class="img-fluid"> <br> Netherlands
+                      </td>
+                      <td class="country-australia" onclick="window.location.href='/routes/country.html?id=15'">
+                          <img src="/assets/image/icon/country/at.png" class="img-fluid"> <br> Australia
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
   </div>
+
+  <!-- Search Box -->
+  <div class="search-box mx-auto">
+      <button type="button" class="btn w-25 h-25 mx-auto" style="background-color: #9948c5; color: white;"><i class="fa-solid fa-magnifying-glass p-2"></i>Search for more...</button>
+  </div>
+</div>
+
 <!-- enterprice -->
   <div class="container py-5" id="enterprise">
     <!-- Enterprise Clients Section -->
@@ -622,56 +631,9 @@
       </div>
   </div>
   </div>
-<!-- leran more -->
-  <div class="container-fluid py-5 bg-custom-blue mt-5 text-black" id="blog">
-    <div class="text-center mb-4">
-        <h2 class="fw-bold">Learn More</h2>
-        <p class="text-muted">These articles provide information on receiving SMS messages with disposable numbers</p>
-    </div>
-
-    <div class="row g-4 p-5">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="learn-card shadow-sm">
-                <img src="/assets/image/pricing.png" class="card-img-top" alt="Suppliers and pricing">
-                <div class="card-body">
-                    <h5 class="learn-card-title">Suppliers and pricing</h5>
-                    <p class="learn-card-text">Learn how we work with multiple suppliers and form pricing policy.</p>
-                    <a href="#" class="text-decoration-none" style="color: #9948c5;">Read more &rsaquo;</a>
-                </div>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4">
-            <div class="learn-card shadow-sm">
-                <img src="/assets/image/right.png" class="card-img-top" alt="How to make it right?">
-                <div class="card-body">
-                    <h5 class="learn-card-title">How to make it right?</h5>
-                    <p class="learn-card-text">Learn how to do successful SMS verifications.</p>
-                    <a href="#" class="text-decoration-none" style="color: #9948c5;">Read more &rsaquo;</a>
-                </div>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4">
-            <div class="learn-card shadow-sm">
-                <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="What is Temp-Number?">
-                <div class="card-body">
-                    <h5 class="learn-card-title">What is Temp-Number?</h5>
-                    <p class="learn-card-text">Explanatory article about the service.</p>
-                    <a href="#" class="text-decoration-none" style="color: #9948c5;">Read more &rsaquo;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-center mt-2">
-        <a href="blog.html" class="learn-btn-purple text-decoration-none px-4 py-2">Visit Blog</a>
-    </div>
-  </div>
 <!-- FAQ -->
   <div class="container my-5 py-5" id="faq">
-    <div class="faq-header text-center" >Frequently Asked Questions</div>
+    <div class="faq-header text-center p-4 fs-2 fw-bold">Frequently Asked Questions</div>
     <div class="faq-card">
       <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
         Can I get a temporary phone number with DialerHQ? 
@@ -719,20 +681,29 @@
     </div>
   </div>
 <!-- Download Section -->
-  <div class="download-section py-5" id="download">
-    <div class="download-text">
-      <h2 class="fw-bold fs-1" >Download - Get it now</h2>
-      <p class="fs-6 w-100">With our easy-to-use interface, you can quickly visit or download a temporary number and have it up and running in no time. So don’t wait - get your temporary phone number today!</p>
-      <div class="download-buttons">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Google_Play_Store_badge_EN.svg" alt="Google Play">
-        <img src="https://via.placeholder.com/100x40?text=Web+Version" alt="Web Version">
+<div class="download-section py-5" id="download">
+  <div class="container">
+    <div class="row align-items-center text-center text-lg-start">
+      <!-- Text Section -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h2 class="fw-bold fs-1 mb-3">Download - Get it now</h2>
+        <p class="fs-6 mb-4">
+          With our easy-to-use interface, you can quickly visit or download a temporary number and have it up and running in no time. So don't wait - get your temporary phone number today!
+        </p>
+        <div class="download-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store" class="img-fluid" style="height: 50px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Google_Play_Store_badge_EN.svg" alt="Google Play" class="img-fluid" style="height: 50px;">
+          <img src="https://via.placeholder.com/120x40?text=Web+Version" alt="Web Version" class="img-fluid" style="height: 50px;">
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-lg-6 col-md-12">
+        <img src="/assets/image/api.png" alt="App Screenshot" class="img-fluid rounded mx-auto d-block shadow">
       </div>
     </div>
-    <div class="download-image">
-      <img src="https://via.placeholder.com/250x400" alt="App Screenshot" class="img-fluid">
-    </div>
   </div>
+</div>
 <!-- feedback -->
   <div class="feedback-section py-5 my-5 mb-5 bg-white rounded" id="feedback">
     <h2 class="feedback-title">Our clients reviews</h2>

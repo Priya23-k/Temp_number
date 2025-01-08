@@ -24,28 +24,42 @@
         </p>
       </div>
       <div class="col-md-6 d-flex rounded justify-content-center">
-        <div class="card shadow-lg border-0 w-75 rounded m-4 p-3">
-          <div class="card-body">
-            <form class="w-75 mx-auto">
-              <div class="mb-4">
-                <label for="service" class="form-label fw-bold">Service</label>
-                <select id="service" class="form-select form-select-lg">
-                  <option selected>Choose a service</option>
+        <div class="form-card mx-auto p-4 mt-4 w-75">
+          <form>
+            <!-- Service Field -->
+            <div class="mb-3">
+              <label for="service" class="form-label">Service</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-gear"></i> <!-- Icon for Service -->
+                </span>
+                <select id="service" class="form-select">
+                  <option selected>Service</option>
                   <option value="1">Service 1</option>
                   <option value="2">Service 2</option>
                 </select>
               </div>
-              <div class="mb-4">
-                <label for="service-country" class="form-label fw-bold">Country</label>
-                <select id="service-country" class="form-select form-select-lg">
-                  <option selected>Choose a country</option>
-                  <option value="1">Country 1</option>
-                  <option value="2">Country 2</option>
+            </div>
+            <!-- Country Field -->
+            <div class="mb-3">
+              <label for="country" class="form-label">Country</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-earth-americas"></i> <!-- Icon for Country -->
+                </span>
+                <select id="country" class="form-select">
+                  <option selected>Country</option>
+                  <option value="1">USA</option>
+                  <option value="2">Canada</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold py-3">Get Number →</button>
-            </form>
-          </div>
+            </div>
+        
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary-custom text-white btn-lg w-100 fs-6">
+              Get Number →
+            </button>
+          </form>
         </div>
       </div>
     </div>

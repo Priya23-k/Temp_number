@@ -104,26 +104,12 @@ body {
 .btn-primary-custom {
   background-color: #9948c5;
   border: none;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
 .btn-primary-custom:hover {
-  background-color: #7b3f9b; /* Darker shade on hover */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-/* Outline Button */
-.btn-outline-custom {
-  color: #9948c5;
-  border-color: #9948c5;
-  transition: all 0.3s ease; /* Smooth transition */
-}
-
-.btn-outline-custom:hover {
-  background-color: #ffffff;
-  color: #9948c5;
-  border-color: #9948c5;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: #7b3f9b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Form Card Styling */
@@ -131,13 +117,8 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 20px;
 }
 
-/* Form Styling */
-form {
-  width: 300px;
-}
 
 /* Button Large Size */
 .btn-lg {
@@ -629,7 +610,7 @@ li {
 .download-section {
   background-color: #9948c5;
   color: white;
-  padding: 100px;
+  padding: 30px;
   display: flex;
   border-radius: 30px;
   margin: 95px;
