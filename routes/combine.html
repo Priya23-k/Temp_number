@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Number Navbar</title>
+  <link rel="icon" href="/assets/image/logo.png" type="/assets/image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/combine.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder" style="position: sticky; top: 0;"></div>
+
+<!-- Content -->
+  <div class="container my-5 py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="fw-bold display-4">Temp Number for <span class="servicename text-warning"></span> in
+          <span class="countryname text-warning"></span>
+        </h1>
+        <p class="text-muted lead">
+          We provide you with a temporary number for <span class="servicename"></span> in 
+          <span class="countryname"></span> so that you can receive SMS online for
+          verification and account activation purposes. We use real SIM cards, not virtual VOIP numbers. Keep your
+          privacy strong by registering for <span class="servicename"></span> in 
+          <span class="countryname"></span> with a Temp Number without revealing your real number
+        </p>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="card shadow-lg border-0 w-75 p-3">
+          <div class="card-body">
+            <form class="w-75 mx-auto">
+              <div class="mb-4">
+                <label for="service" class="form-label fw-bold">Service</label>
+                <select id="service" class="form-select form-select-lg">
+                  <option selected>Choose a service</option>
+                  <option value="1">Service 1</option>
+                  <option value="2">Service 2</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="service-country" class="form-label fw-bold">Country</label>
+                <select id="service-country" class="form-select form-select-lg">
+                  <option selected>Choose a country</option>
+                  <option value="1">Country 1</option>
+                  <option value="2">Country 2</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold py-3">Get Number →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about service & country -->
+  <div class="container my-5 py-5">
+    <div class="row g-4">
+      <!-- First Card -->
+      <div class="col-md-6">
+        <div class="card card-custom">
+          <div class="d-flex align-items-start">
+            <img alt="WhatsApp Icon" class="serviceimage img-fluid service-icon" style="width: 50px;">
+            <div>
+              <h5 class="card-title">What is <span class="servicename"></span>?</h5>
+              <p class="card-text">
+                <span class="servicedescription"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-md-6">
+        <div class="card card-custom">
+          <div class="d-flex align-items-start">
+            <img class="countryimage me-3" alt="Country Flag" width="70" height="50">
+            <div>
+              <h5 class="card-title">About <span class="countryname"></span></h5>
+              <p class="card-text">
+                <p class="countrydescription"></p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5 py-5">
+    <!-- Section Title -->
+    <h1 class="text-center section-title">Popular services in <span id="country-name">United States</span></h1>
+    <p class="text-center section-subtitle pb-3">
+      You can get temporary phone numbers in <span id="country-description">United States</span> for websites, apps, and internet services.
+      Find a Temp Number to receive SMS from a specific service or search for more.
+    </p>
+  
+    <ul class="nav nav-tabs justify-content-center" id="tabMenu">
+      <li class="nav-item active">
+        <button class="nav-link active" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link " id="countries-tab" data-bs-toggle="tab" data-bs-target="#countries" type="button">Countries</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Services Table -->
+      <div class="tab-pane fade show active" id="services" role="tabpanel">
+        <table class="table table-bordered text-center">
+          <tbody class="service" style="cursor: pointer;">
+            <tr>
+              <td class="service-wh" onclick="window.location.href='/routes/combine.html?id=1'">
+                <img src="/assets/image/icon/whatsapp.png"> WhatsApp
+              </td>
+              <td class="service-te" onclick="window.location.href='/routes/combine.html?id=2'">
+                <img src="/assets/image/icon/telegram.png"> Telegram
+              </td>
+              <td class="service-fa" onclick="window.location.href='/routes/combine.html?id=3'">
+                <img src="/assets/image/icon/facebook.png"> Facebook/Meta
+              </td>
+            </tr>
+            <tr>
+              <td class="service-go" onclick="window.location.href='/routes/combine.html?id=4'">
+                <img src="/assets/image/icon/google.png"> Google/Gmail
+              </td>
+              <td class="service-pl" onclick="window.location.href='/routes/combine.html?id=5'">
+                <img src="/assets/image/icon/pof_com.png"> Plenty of Fish
+              </td>
+              <td class="service-pa" onclick="window.location.href='/routes/combine.html?id=6'">
+                <img src="/assets/image/icon/paypal.png"> PayPal
+              </td>
+            </tr>
+            <tr>
+              <td class="service-tw" onclick="window.location.href='/routes/combine.html?id=7'">
+                <img src="/assets/image/icon/twitter.png"> Twitter
+              </td>
+              <td class="service-eb" onclick="window.location.href='/routes/combine.html?id=8'">
+                <img src="/assets/image/icon/ebay.png"> eBay
+              </td>
+              <td class="service-am" onclick="window.location.href='/routes/combine.html?id=9'">
+                <img src="/assets/image/icon/amazon.png"> Amazon
+              </td>
+            </tr>
+            <tr>
+              <td class="service-ub" onclick="window.location.href='/routes/combine.html?id=10'">
+                <img src="/assets/image/icon/uber.png"> Uber
+              </td>
+              <td class="service-ti" onclick="window.location.href='/routes/combine.html?id=11'">
+                <img src="/assets/image/icon/tiktok.png"> TikTok
+              </td>
+              <td class="service-in" onclick="window.location.href='/routes/combine.html?id=12'">
+                <img src="/assets/image/icon/instagram.png"> Instagram
+              </td>
+            </tr>
+            <tr>
+              <td class="service-ge" onclick="window.location.href='/routes/combine.html?id=13'">
+                <img src="/assets/image/icon/getir.png"> Getir
+              </td>
+              <td class="service-ne" onclick="window.location.href='/routes/combine.html?id=14'">
+                <img src="/assets/image/icon/netflix.png"> Netflix
+              </td>
+              <td class="service-di" onclick="window.location.href='/routes/combine.html?id=15'">
+                <img src="/assets/image/icon/discord.png"> Discord
+              </td>
+            </tr>
+          </tbody>          
+        </table>
+      </div>
+      <!-- Countries Table -->
+      <div class="tab-pane fade show active" id="countries" role="tabpanel">
+        <table class="table table-bordered text-center">
+          <tbody class="country" style="cursor: pointer;">
+            <tr>
+              <td class="country-uk" onclick="window.location.href='/routes/combine.html?id=1'">
+                <img src="/assets/image/icon/country/uk.png"> United Kingdom
+              </td>
+              <td class="country-usa" onclick="window.location.href='/routes/combine.html?id=2'">
+                <img src="/assets/image/icon/country/us.png"> United States
+              </td>
+              <td class="country-india" onclick="window.location.href='/routes/combine.html?id=3'">
+                <img src="/assets/image/icon/country/in.png"> India
+              </td>
+            </tr>
+            <tr>
+              <td class="country-brazil" onclick="window.location.href='/routes/combine.html?id=4'">
+                <img src="/assets/image/icon/country/br.png"> Brazil
+              </td>
+              <td class="country-malaysia" onclick="window.location.href='/routes/combine.html?id=5'">
+                <img src="/assets/image/icon/country/my.png"> Malaysia
+              </td>
+              <td class="country-russia" onclick="window.location.href='/routes/combine.html?id=6'">
+                <img src="/assets/image/icon/country/ru.png"> Russia
+              </td>
+            </tr>
+            <tr>
+              <td class="country-italy" onclick="window.location.href='/routes/combine.html?id=7'">
+                <img src="/assets/image/icon/country/it.png"> Italy
+              </td>
+              <td class="country-china" onclick="window.location.href='/routes/combine.html?id=8'">
+                <img src="/assets/image/icon/country/cn.png"> China
+              </td>
+              <td class="country-mexico" onclick="window.location.href='/routes/combine.html?id=9'">
+                <img src="/assets/image/icon/country/mx.png"> Mexico
+              </td>
+            </tr>
+            <tr>
+              <td class="country-turkey" onclick="window.location.href='/routes/combine.html?id=10'">
+                <img src="/assets/image/icon/country/tr.png"> Turkey
+              </td>
+              <td class="country-france" onclick="window.location.href='/routes/combine.html?id=11'">
+                <img src="/assets/image/icon/country/fr.png"> France
+              </td>
+              <td class="country-germany" onclick="window.location.href='/routes/combine.html?id=12'">
+                <img src="/assets/image/icon/country/ge.png"> Germany
+              </td>
+            </tr>
+            <tr>
+              <td class="country-spain" onclick="window.location.href='/routes/combine.html?id=13'">
+                <img src="/assets/image/icon/country/sp.png"> Spain
+              </td>
+              <td class="country-netherlands" onclick="window.location.href='/routes/combine.html?id=14'">
+                <img src="/assets/image/icon/country/nl.png"> Netherlands
+              </td>
+              <td class="country-australia" onclick="window.location.href='/routes/combine.html?id=15'">
+                <img src="/assets/image/icon/country/at.png"> Australia
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>    
+    </div>
+  </div>
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript -->
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/service.js"></script>
+  <script src="/assets/js/country.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

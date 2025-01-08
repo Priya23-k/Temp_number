@@ -1,0 +1,201 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "servicename": "WhatsApp",
+      "serviceimage": "/assets/image/icon/whatsapp.png",
+      "servicedescription": "WhatsApp is a messaging platform that allows users to send text, voice messages, images, videos, and conduct voice and video calls. It works through an internet connection and supports end-to-end encryption to ensure privacy. WhatsApp is widely used for personal communication and business interactions due to its global reach and user-friendly interface."
+    },
+    {
+      "id": 2,
+      "servicename": "Telegram",
+      "serviceimage": "/assets/image/icon/telegram.png",
+      "servicedescription": "Telegram is a cloud-based messaging application designed for speed and security. It supports text and multimedia messages, group chats, and voice/video calls. Telegram’s cloud-based nature allows messages to be synchronized across devices. Its robust privacy features, support for large file sharing, and various channels and bots make it a popular choice for users seeking a secure and versatile messaging platform."
+    },
+    {
+      "id": 3,
+      "servicename": "Facebook/Meta",
+      "serviceimage": "/assets/image/icon/facebook.png",
+      "servicedescription": "Facebook, owned by Meta Platforms, is a social media platform that connects individuals, communities, and businesses worldwide. It allows users to share updates, photos, and videos, engage in discussions, and access personalized news. Facebook's vast user base and advertising capabilities make it a leading tool for social interaction, content sharing, and digital marketing."
+    },
+    {
+      "id": 4,
+      "servicename": "Google/Gmail",
+      "serviceimage": "/assets/image/icon/google.png",
+      "servicedescription": "Google's Gmail is a widely used email service offering powerful features like spam protection, integration with Google services, and an intuitive user interface. It enables users to send and receive emails, manage contacts, and access a suite of tools like Google Calendar and Google Drive. Gmail is known for its security features, such as two-factor authentication, and is a preferred choice for both personal and professional communication."
+    },
+    {
+      "id": 5,
+      "servicename": "Plenty of Fish",
+      "serviceimage": "/assets/image/icon/pof_com.png",
+      "servicedescription": "Plenty of Fish (POF) is an online dating service that allows users to connect with potential partners based on shared interests and compatibility. The platform supports profile customization, messaging, and a matchmaking algorithm. With its large user base, POF offers a free and effective platform for people looking for relationships or casual interactions."
+    },
+    {
+      "id": 6,
+      "servicename": "PayPal",
+      "serviceimage": "/assets/image/icon/paypal.png",
+      "servicedescription": "PayPal is a globally recognized online payment platform that facilitates secure financial transactions, including payments for goods and services, and peer-to-peer transfers. It links to users' bank accounts or credit cards to process transactions. PayPal's ease of use, security features, and buyer protection policies make it a trusted choice for both individuals and businesses worldwide."
+    },
+    {
+      "id": 7,
+      "servicename": "Twitter",
+      "serviceimage": "/assets/image/icon/twitter.png",
+      "servicedescription": "Twitter is a microblogging and social networking service that allows users to post and interact with short messages called 'tweets.' It supports real-time conversations, networking, and updates on current events. Twitter is widely used by individuals, celebrities, businesses, and government organizations for quick, public communication."
+    },
+    {
+      "id": 8,
+      "servicename": "eBay",
+      "serviceimage": "/assets/image/icon/ebay.png",
+      "servicedescription": "eBay is a leading online marketplace where individuals and businesses can buy and sell goods and services worldwide. It offers both auction-style and fixed-price listings. eBay’s wide range of product categories, secure payment methods, and buyer protection policies have made it a trusted platform for global e-commerce."
+    },
+    {
+      "id": 9,
+      "servicename": "Amazon",
+      "serviceimage": "/assets/image/icon/amazon.png",
+      "servicedescription": "Amazon is one of the largest online retailers globally, offering a wide range of products, from books to electronics, clothing, and groceries. Amazon provides a seamless shopping experience with fast delivery options, user reviews, and personalized recommendations. It also serves as a platform for third-party sellers to reach customers worldwide."
+    },
+    {
+      "id": 10,
+      "servicename": "Uber",
+      "serviceimage": "/assets/image/icon/uber.png",
+      "servicedescription": "Uber is a ride-sharing service that allows users to request a ride from nearby drivers using a smartphone app. It provides a cost-effective, efficient, and convenient transportation solution. Uber operates in cities around the world, revolutionizing the way people commute by offering flexible payment options and reliable service."
+    },
+    {
+      "id": 11,
+      "servicename": "TikTok",
+      "serviceimage": "/assets/image/icon/tiktok.png",
+      "servicedescription": "TikTok is a short-form video platform that enables users to create, share, and explore creative content. With a vast range of effects, filters, and music, TikTok encourages users to engage in viral challenges, trends, and tutorials. It has become a major platform for entertainment, education, and brand promotion."
+    },
+    {
+      "id": 12,
+      "servicename": "Instagram",
+      "serviceimage": "/assets/image/icon/instagram.png",
+      "servicedescription": "Instagram is a photo and video sharing social networking service that allows users to upload media to a personal feed. It supports features like Stories, direct messaging, and IGTV for long-form videos. Instagram is a popular platform for both personal and business branding, offering a range of creative tools to engage with followers."
+    },
+    {
+      "id": 13,
+      "servicename": "Getir",
+      "serviceimage": "/assets/image/icon/getir.png",
+      "servicedescription": "Getir is a delivery service that provides ultra-fast grocery deliveries in urban areas. With an intuitive app, Getir allows customers to order groceries, snacks, and daily essentials for delivery within minutes. The service is revolutionizing urban convenience by offering quick, easy access to products without leaving home."
+    },
+    {
+      "id": 14,
+      "servicename": "Netflix",
+      "serviceimage": "/assets/image/icon/netflix.png",
+      "servicedescription": "Netflix is a leading streaming platform offering on-demand video content, including movies, TV shows, documentaries, and original programming. With a vast library of content in various genres, Netflix is accessible on multiple devices, making it the preferred entertainment service for millions of global subscribers."
+    },
+    {
+      "id": 15,
+      "servicename": "Discord",
+      "serviceimage": "/assets/image/icon/discord.png",
+      "servicedescription": "Discord is a communication platform designed for creating communities and engaging in voice, video, and text chats. It is primarily used by gamers, but it also supports educational groups, professional teams, and other communities. Discord offers features like customizable servers, channels, and integrations with other platforms."
+    }
+  ],  
+  "countries": [
+    {
+      "id": 1,
+      "countryname": "United Kingdom",
+      "countryimage": "/assets/image/icon/country/uk.png",
+      "countrydescription": "The United Kingdom is a sovereign country located in Western Europe, known for its historical significance, diverse culture, and global influence in politics, finance, and education. It is home to iconic landmarks such as the Tower of London and Buckingham Palace and has made substantial contributions to art, science, and literature.",
+      "countrycode": "44"
+    },
+    {
+      "id": 2,
+      "countryname": "United States",
+      "countryimage": "/assets/image/icon/country/us.png",
+      "countrydescription": "The United States of America is a country in North America known for its global political, economic, and cultural influence. It is a melting pot of diverse cultures and has made significant advancements in technology, entertainment, and education. The U.S. is home to world-leading institutions such as Silicon Valley and Hollywood.",
+      "countrycode": "1"
+    },
+    {
+      "id": 3,
+      "countryname": "India",
+      "countryimage": "/assets/image/icon/country/in.png",
+      "countrydescription": "India is a country in South Asia known for its ancient history, rich cultural heritage, and rapidly growing economy. It is a global leader in information technology, space research, and film production. India is famous for its diverse languages, religions, and festivals, making it one of the most vibrant and diverse countries in the world.",
+      "countrycode": "91"
+    },
+    {
+      "id": 4,
+      "countryname": "Brazil",
+      "countryimage": "/assets/image/icon/country/br.png",
+      "countrydescription": "Brazil is the largest country in South America, famous for its vast rainforests, vibrant culture, and diverse ecosystems. It has a strong economy, driven by industries such as agriculture, mining, and energy, and is known for its carnival celebrations and world-class football team.",
+      "countrycode": "55"
+    },
+    {
+      "id": 5,
+      "countryname": "Malaysia",
+      "countryimage": "/assets/image/icon/country/my.png",
+      "countrydescription": "Malaysia is a Southeast Asian country known for its tropical rainforests, diverse culture, and strong economic performance in sectors such as manufacturing, finance, and tourism. The country's capital, Kuala Lumpur, is an international business hub with modern skyscrapers and historic landmarks.",
+      "countrycode": "60"
+    },
+    {
+      "id": 6,
+      "countryname": "Russia",
+      "countryimage": "/assets/image/icon/country/ru.png",
+      "countrydescription": "Russia is the largest country in the world, spanning Eastern Europe and northern Asia. It is known for its vast landscapes, rich cultural history, and contributions to global politics, science, and the arts. Russia is a key player on the world stage and has a significant influence on global energy markets.",
+      "countrycode": "7"
+    },
+    {
+      "id": 7,
+      "countryname": "Italy",
+      "countryimage": "/assets/image/icon/country/it.png",
+      "countrydescription": "Italy is a European country known for its historical landmarks, art, and culinary traditions. From the ancient ruins of Rome to the romantic canals of Venice, Italy boasts a rich cultural legacy that has shaped Western civilization. The country is a leading global exporter of fashion, design, and luxury goods.",
+      "countrycode": "39"
+    },
+    {
+      "id": 8,
+      "countryname": "China",
+      "countryimage": "/assets/image/icon/country/cn.png",
+      "countrydescription": "China is an East Asian country known for its ancient history, rich cultural heritage, and rapid economic development. It is home to iconic landmarks such as the Great Wall, the Forbidden City, and modern skyscrapers in cities like Shanghai and Beijing.",
+      "countrycode": "86"
+    },
+    {
+      "id": 9,
+      "countryname": "Mexico",
+      "countryimage": "/assets/image/icon/country/mx.png",
+      "countrydescription": "Mexico is a North American country known for its vibrant culture, historical sites, and beautiful landscapes. From ancient Mayan ruins to stunning beaches in Cancun, Mexico offers a blend of rich traditions and modern attractions.",
+      "countrycode": "52"
+    },
+    {
+      "id": 10,
+      "countryname": "Turkey",
+      "countryimage": "/assets/image/icon/country/tr.png",
+      "countrydescription": "Turkey is a transcontinental country bridging Europe and Asia, renowned for its historical significance and natural beauty. Key attractions include the Hagia Sophia, the ancient city of Ephesus, and the breathtaking landscapes of Cappadocia.",
+      "countrycode": "90"
+    },
+    {
+      "id": 11,
+      "countryname": "France",
+      "countryimage": "/assets/image/icon/country/fr.png",
+      "countrydescription": "France is a European country celebrated for its art, architecture, and gastronomy. Known for landmarks like the Eiffel Tower, the Louvre Museum, and the wine regions of Bordeaux and Burgundy, France is a global center of culture and luxury.",
+      "countrycode": "33"
+    },
+    {
+      "id": 12,
+      "countryname": "Germany",
+      "countryimage": "/assets/image/icon/country/ge.png",
+      "countrydescription": "Germany is a country in Central Europe known for its engineering, technological innovation, and rich cultural heritage. It is a global economic powerhouse, particularly in the automotive and manufacturing industries. Germany is renowned for its contributions to philosophy, literature, and classical music.",
+      "countrycode": "49"
+    },
+    {
+      "id": 13,
+      "countryname": "Spain",
+      "countryimage": "/assets/image/icon/country/sp.png",
+      "countrydescription": "Spain is a European country known for its diverse landscapes, cultural heritage, and lively festivals. From the architectural wonders of Barcelona to the historical charm of Seville and the beaches of Costa del Sol, Spain offers a rich and vibrant experience.",
+      "countrycode": "34"
+    },
+    {
+      "id": 14,
+      "countryname": "Netherlands",
+      "countryimage": "/assets/image/icon/country/nl.png",
+      "countrydescription": "The Netherlands, also known as Holland, is a European country famous for its tulip fields, windmills, and canals. It is known for its progressive culture, historic cities like Amsterdam, and a high standard of living.",
+      "countrycode": "31"
+    },
+    {
+      "id": 15,
+      "countryname": "Australia",
+      "countryimage": "/assets/image/icon/country/at.png",
+      "countrydescription": "Australia is a country and continent in the Southern Hemisphere known for its unique wildlife, beautiful beaches, and vibrant cities. It has a strong economy, driven by sectors such as mining, agriculture, and tourism. Australia is renowned for its high quality of life and diverse cultural influences.",
+      "countrycode": "61"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.country-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-select-lg {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn-warning {
+    background-color: #9948c5;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #893fb1;
+}
+
+.text-warning {
+    color: #9948c5 !important;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.about-card {
+border-radius: 15px;
+background-color: #f8f9fa; /* Light gray background */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+padding: 20px;
+}
+.about-card img {
+    border-radius: 10px;
+}
+
+.about-card h5 {
+    font-weight: bold;
+}
+
+.about-card p {
+    color: #6c757d; /* Subtle text color */
+}

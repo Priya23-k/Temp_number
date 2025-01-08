@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.btn-warning {
+    background-color: #9948c5;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #893fb1;
+}
+
+.text-warning {
+    color: #9948c5 !important;
+}
+
+.lead {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.display-4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.card-custom {
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: none;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #6c757d;
+}
