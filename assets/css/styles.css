@@ -508,7 +508,27 @@ a {
 .nav-tabs .nav-link.active {
   background-color: #9948c5;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Mobile-specific Styles */
+@media (max-width: 768px) {
+  .nav-tabs {
+      display: flex; /* Keep tabs in a horizontal row */
+      justify-content: space-evenly; /* Distribute tabs evenly */
+  }
+
+  .nav-item {
+      flex: 1; /* Allow items to take equal width */
+  }
+
+  .nav-link {
+      padding: 10px 15px; /* Slightly reduced padding for mobile */
+      font-size: 14px; /* Smaller font size for better mobile compatibility */
+  }
+}
+
 .nav-link,.nav-link:hover{
   color: #000000;
 }
