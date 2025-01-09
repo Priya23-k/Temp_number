@@ -15,7 +15,7 @@
 
 <body>
   <!-- Navbar -->
-  <div id="navbar-placeholder" style="position: sticky; top: 0;"></div>
+  <div id="navbar-placeholder"></div>
 
 <!-- Content -->
   <div class="container my-5 py-5">
@@ -117,7 +117,7 @@
     </p>
   
     <ul class="nav nav-tabs justify-content-center" id="tabMenu">
-      <li class="nav-item active">
+      <li class="nav-item">
         <button class="nav-link active" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
       </li>
       <li class="nav-item">
@@ -128,128 +128,275 @@
     <!-- Tab Content -->
     <div class="tab-content">
       <!-- Services Table -->
-      <div class="tab-pane fade show active" id="services" role="tabpanel">
-        <table class="table table-bordered text-center">
-          <tbody class="service" style="cursor: pointer;">
-            <tr>
-              <td class="service-wh" onclick="window.location.href='/routes/combine.html?id=1'">
-                <img src="/assets/image/icon/whatsapp.png"> WhatsApp
-              </td>
-              <td class="service-te" onclick="window.location.href='/routes/combine.html?id=2'">
-                <img src="/assets/image/icon/telegram.png"> Telegram
-              </td>
-              <td class="service-fa" onclick="window.location.href='/routes/combine.html?id=3'">
-                <img src="/assets/image/icon/facebook.png"> Facebook/Meta
-              </td>
-            </tr>
-            <tr>
-              <td class="service-go" onclick="window.location.href='/routes/combine.html?id=4'">
-                <img src="/assets/image/icon/google.png"> Google/Gmail
-              </td>
-              <td class="service-pl" onclick="window.location.href='/routes/combine.html?id=5'">
-                <img src="/assets/image/icon/pof_com.png"> Plenty of Fish
-              </td>
-              <td class="service-pa" onclick="window.location.href='/routes/combine.html?id=6'">
-                <img src="/assets/image/icon/paypal.png"> PayPal
-              </td>
-            </tr>
-            <tr>
-              <td class="service-tw" onclick="window.location.href='/routes/combine.html?id=7'">
-                <img src="/assets/image/icon/twitter.png"> Twitter
-              </td>
-              <td class="service-eb" onclick="window.location.href='/routes/combine.html?id=8'">
-                <img src="/assets/image/icon/ebay.png"> eBay
-              </td>
-              <td class="service-am" onclick="window.location.href='/routes/combine.html?id=9'">
-                <img src="/assets/image/icon/amazon.png"> Amazon
-              </td>
-            </tr>
-            <tr>
-              <td class="service-ub" onclick="window.location.href='/routes/combine.html?id=10'">
-                <img src="/assets/image/icon/uber.png"> Uber
-              </td>
-              <td class="service-ti" onclick="window.location.href='/routes/combine.html?id=11'">
-                <img src="/assets/image/icon/tiktok.png"> TikTok
-              </td>
-              <td class="service-in" onclick="window.location.href='/routes/combine.html?id=12'">
-                <img src="/assets/image/icon/instagram.png"> Instagram
-              </td>
-            </tr>
-            <tr>
-              <td class="service-ge" onclick="window.location.href='/routes/combine.html?id=13'">
-                <img src="/assets/image/icon/getir.png"> Getir
-              </td>
-              <td class="service-ne" onclick="window.location.href='/routes/combine.html?id=14'">
-                <img src="/assets/image/icon/netflix.png"> Netflix
-              </td>
-              <td class="service-di" onclick="window.location.href='/routes/combine.html?id=15'">
-                <img src="/assets/image/icon/discord.png"> Discord
-              </td>
-            </tr>
-          </tbody>          
-        </table>
+      <div class="tab-pane fade  show active" id="services" role="tabpanel">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Card 1 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=1'">
+                    <a href="/routes/combine.html?id=1" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/whatsapp.png" class="card-img-top img-fluid mt-3" alt="WhatsApp">
+                        <div class="card-body">
+                            <h5 class="card-title">WhatsApp</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=2'">
+                    <a href="/routes/combine.html?id=2" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/telegram.png" class="card-img-top img-fluid mt-3" alt="Telegram">
+                        <div class="card-body">
+                            <h5 class="card-title">Telegram</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=3'">
+                    <a href="/routes/combine.html?id=3" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/facebook.png" class="card-img-top img-fluid mt-3" alt="Facebook/Meta">
+                        <div class="card-body">
+                            <h5 class="card-title">Facebook/Meta</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=4'">
+                    <a href="/routes/combine.html?id=4" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/google.png" class="card-img-top img-fluid mt-3" alt="Google/Gmail">
+                        <div class="card-body">
+                            <h5 class="card-title">Google/Gmail</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=5'">
+                    <a href="/routes/combine.html?id=5" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/pof_com.png" class="card-img-top img-fluid mt-3" alt="Plenty of Fish">
+                        <div class="card-body">
+                            <h5 class="card-title">Plenty of Fish</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=6'">
+                    <a href="/routes/combine.html?id=6" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/paypal.png" class="card-img-top img-fluid mt-3" alt="PayPal">
+                        <div class="card-body">
+                            <h5 class="card-title">PayPal</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=7'">
+                    <a href="/routes/combine.html?id=7" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/uber.png" class="card-img-top img-fluid mt-3" alt="Uber">
+                        <div class="card-body">
+                            <h5 class="card-title">Uber</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=8'">
+                    <a href="/routes/combine.html?id=8" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/tiktok.png" class="card-img-top img-fluid mt-3" alt="TikTok">
+                        <div class="card-body">
+                            <h5 class="card-title">TikTok</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=9'">
+                    <a href="/routes/combine.html?id=9" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/instagram.png" class="card-img-top img-fluid mt-3" alt="Instagram">
+                        <div class="card-body">
+                            <h5 class="card-title">Instagram</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 10 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=10'">
+                    <a href="/routes/combine.html?id=10" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/getir.png" class="card-img-top img-fluid mt-3" alt="Getir">
+                        <div class="card-body">
+                            <h5 class="card-title">Getir</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 11 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=11'">
+                    <a href="/routes/combine.html?id=11" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/netflix.png" class="card-img-top img-fluid mt-3" alt="Netflix">
+                        <div class="card-body">
+                            <h5 class="card-title">Netflix</h5>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 12 -->
+                <div class="col-md-4" onclick="window.location.href='/routes/combine.html?id=12'">
+                    <a href="/routes/combine.html?id=12" class="card text-center text-decoration-none">
+                        <img src="/assets/image/icon/discord.png" class="card-img-top img-fluid mt-3" alt="Discord">
+                        <div class="card-body">
+                            <h5 class="card-title">Discord</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
       </div>
+  
       <!-- Countries Table -->
-      <div class="tab-pane fade show active" id="countries" role="tabpanel">
-        <table class="table table-bordered text-center">
-          <tbody class="country" style="cursor: pointer;">
-            <tr>
-              <td class="country-uk" onclick="window.location.href='/routes/combine.html?id=1'">
-                <img src="/assets/image/icon/country/uk.png"> United Kingdom
-              </td>
-              <td class="country-usa" onclick="window.location.href='/routes/combine.html?id=2'">
-                <img src="/assets/image/icon/country/us.png"> United States
-              </td>
-              <td class="country-india" onclick="window.location.href='/routes/combine.html?id=3'">
-                <img src="/assets/image/icon/country/in.png"> India
-              </td>
-            </tr>
-            <tr>
-              <td class="country-brazil" onclick="window.location.href='/routes/combine.html?id=4'">
-                <img src="/assets/image/icon/country/br.png"> Brazil
-              </td>
-              <td class="country-malaysia" onclick="window.location.href='/routes/combine.html?id=5'">
-                <img src="/assets/image/icon/country/my.png"> Malaysia
-              </td>
-              <td class="country-russia" onclick="window.location.href='/routes/combine.html?id=6'">
-                <img src="/assets/image/icon/country/ru.png"> Russia
-              </td>
-            </tr>
-            <tr>
-              <td class="country-italy" onclick="window.location.href='/routes/combine.html?id=7'">
-                <img src="/assets/image/icon/country/it.png"> Italy
-              </td>
-              <td class="country-china" onclick="window.location.href='/routes/combine.html?id=8'">
-                <img src="/assets/image/icon/country/cn.png"> China
-              </td>
-              <td class="country-mexico" onclick="window.location.href='/routes/combine.html?id=9'">
-                <img src="/assets/image/icon/country/mx.png"> Mexico
-              </td>
-            </tr>
-            <tr>
-              <td class="country-turkey" onclick="window.location.href='/routes/combine.html?id=10'">
-                <img src="/assets/image/icon/country/tr.png"> Turkey
-              </td>
-              <td class="country-france" onclick="window.location.href='/routes/combine.html?id=11'">
-                <img src="/assets/image/icon/country/fr.png"> France
-              </td>
-              <td class="country-germany" onclick="window.location.href='/routes/combine.html?id=12'">
-                <img src="/assets/image/icon/country/ge.png"> Germany
-              </td>
-            </tr>
-            <tr>
-              <td class="country-spain" onclick="window.location.href='/routes/combine.html?id=13'">
-                <img src="/assets/image/icon/country/sp.png"> Spain
-              </td>
-              <td class="country-netherlands" onclick="window.location.href='/routes/combine.html?id=14'">
-                <img src="/assets/image/icon/country/nl.png"> Netherlands
-              </td>
-              <td class="country-australia" onclick="window.location.href='/routes/combine.html?id=15'">
-                <img src="/assets/image/icon/country/at.png"> Australia
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="tab-pane fade" id="countries" role="tabpanel">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=1'"> 
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=1">
+                <img src="/assets/image/icon/country/uk.png" class="card-img-top img-fluid" alt="United Kingdom">
+                <div class="card-body">
+                  <h5 class="card-title">United Kingdom</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=2'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=2">
+                <img src="/assets/image/icon/country/us.png" class="card-img-top img-fluid" alt="United States">
+                <div class="card-body">
+                  <h5 class="card-title">United States</h5>
+                </div>
+              </a>
+            </div>
+          </div> 
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=3'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=3">
+                <img src="/assets/image/icon/country/in.png" class="card-img-top img-fluid" alt="India">
+                <div class="card-body">
+                  <h5 class="card-title">India</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=4'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=4">
+                <img src="/assets/image/icon/country/br.png" class="card-img-top img-fluid" alt="Brazil">
+                <div class="card-body">
+                  <h5 class="card-title">Brazil</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=5'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=5">
+                <img src="/assets/image/icon/country/my.png" class="card-img-top img-fluid" alt="Malaysia">
+                <div class="card-body">
+                  <h5 class="card-title">Malaysia</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=6'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=6">
+                <img src="/assets/image/icon/country/ru.png" class="card-img-top img-fluid" alt="Russia">
+                <div class="card-body">
+                  <h5 class="card-title">Russia</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=7'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=7">
+                <img src="/assets/image/icon/country/it.png" class="card-img-top img-fluid" alt="Italy">
+                <div class="card-body">
+                  <h5 class="card-title">Italy</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=8'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=8">
+                <img src="/assets/image/icon/country/cn.png" class="card-img-top img-fluid" alt="China">
+                <div class="card-body">
+                  <h5 class="card-title">China</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=9'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=9">
+                <img src="/assets/image/icon/country/mx.png" class="card-img-top img-fluid" alt="Mexico">
+                <div class="card-body">
+                  <h5 class="card-title">Mexico</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=10'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=10">
+                <img src="/assets/image/icon/country/tr.png" class="card-img-top img-fluid" alt="Turkey">
+                <div class="card-body">
+                  <h5 class="card-title">Turkey</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=11'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=11">
+                <img src="/assets/image/icon/country/fr.png" class="card-img-top img-fluid" alt="France">
+                <div class="card-body">
+                  <h5 class="card-title">France</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=12'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=12">
+                <img src="/assets/image/icon/country/ge.png" class="card-img-top img-fluid" alt="Germany">
+                <div class="card-body">
+                  <h5 class="card-title">Germany</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=13'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=13">
+                <img src="/assets/image/icon/country/sp.png" class="card-img-top img-fluid" alt="Spain">
+                <div class="card-body">
+                  <h5 class="card-title">Spain</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=14'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=14">
+                <img src="/assets/image/icon/country/nl.png" class="card-img-top img-fluid" alt="Netherlands">
+                <div class="card-body">
+                  <h5 class="card-title">Netherlands</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-3" onclick="window.location.href='/routes/combine.html?id=15'">
+            <div class="card text-center">
+              <a href="/routes/combine.html?id=15">
+                <img src="/assets/image/icon/country/at.png" class="card-img-top img-fluid" alt="Australia">
+                <div class="card-body">
+                  <h5 class="card-title">Australia</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>    
     </div>
   </div>

@@ -133,7 +133,9 @@ body {
 }
 
 .btn-outline-custom:hover i {
-  transform: translateX(1px); /* Slide the icon slightly to the right */
+  transform: translateX(1px); 
+  border: 1px solid #893fb1;
+  color: #893fb1;
 }
 .btn-outline-custom{
   border: 1px solid #9948c5;
