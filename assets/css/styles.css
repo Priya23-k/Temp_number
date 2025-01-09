@@ -47,7 +47,7 @@ body {
   }
   
   .navbar-nav .btn-primary {
-    background-color: #b95fea;
+    background-color: #9948c5;
     border: none;
   }
   
@@ -83,7 +83,7 @@ body {
   }
   
   .navbar-toggler-icon {
-    background-color: #9948c5;
+    background-color: #ffffff;
   }
   
 /* section */
@@ -129,12 +129,16 @@ body {
 /* Icon Animation for "Watch Video" Button */
 .btn-outline-custom i {
   transition: transform 0.3s ease;
+  
 }
 
 .btn-outline-custom:hover i {
   transform: translateX(1px); /* Slide the icon slightly to the right */
 }
-
+.btn-outline-custom{
+  border: 1px solid #9948c5;
+  color: #9948c5;
+}
 /* stars */
   .testimonial-card {
     background-color: #f8f9fa; /* Light gray background */
