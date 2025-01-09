@@ -273,85 +273,89 @@ li {
       text-decoration: none;
     }
 /* SIM Card*/
+/* SIM Card*/
 .sim-container {
-  text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.sim-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #222;
-}
-
-.sim-subtitle {
-  color: #666;
-  margin: 10px 0 20px;
-}
-
-.sim-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.sim-header,
-.sim-row {
-  display: flex;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px 0;
-}
-
-.sim-header {
-  background-color: #f5f5f5;
-  font-weight: bold;
-}
-
-.sim-cell {
-  flex: 1;
-  justify-content: center;
+.sim-title {
   text-align: center;
-  padding: 10px;
+  margin-bottom: 1rem;
 }
 
-.sim-cell:first-child {
-  text-align: left;
-  padding-left: 20px;
+.sim-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #555;
 }
 
-.sim-check-icon {
-  color: #ffffff; /* Green */
-  font-size: 18px;
-  background-color: #28a745; /* Optional: Add a background color */
-  border: 2px solid #28a745; /* Optional: Add a border */
-  border-radius: 50%; /* Makes the container round */
-  width: 30px; /* Set width and height to create a circle */
-  height: 30px;
-  display: flex;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.card-body .row {
   align-items: center;
+  font-size: 1rem;
+}
+
+.sim-check-icon{
+  color: green;
+  font-size: 1.8rem;
+  display: flex;
   justify-content: center;
-  margin-left: 110px;
+  align-items: center;
+  height: 100%;
 }
 
 .sim-cross-icon {
-  color: #ffffff; /* Red */
-  font-size: 18px;
-  background-color: #dc3545; /* Optional: Add a background color */
-  border: 2px solid #dc3545; /* Optional: Add a border */
-  border-radius: 50%; /* Makes the container round */
-  width: 30px; /* Set width and height to create a circle */
-  height: 30px;
+  font-size: 1.8rem;
+  color: red;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-left: 110px;
+  align-items: center;
+  height: 100%;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.py-2 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+@media (max-width: 768px) {
+  .sim-container {
+    padding: 0 1rem;
+  }
+
+  .card-header div, .card-body .row div {
+    font-size: 0.9rem;
+  }
+
+  .sim-check-icon, .sim-cross-icon {
+    font-size: 1rem;
+  }
 }
 /* use case */
 .use-section {
@@ -403,36 +407,104 @@ li {
 }
 
 /* service and country */
-.tab-content {
-  border: 0px solid #ddd;
+.card {
+  border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  background: #fff;
-}
-.icon {
-  margin-right: 10px;
-  font-size: 1.5rem;
-  /* color: #6f42c1; */
-}
-.service img{
-  width:32px; 
-  height:32px;
-  margin: 20px;
-}
-.country img{
-  width:32px; 
-  height:24px;
-  margin: 20px;
-}
-.search-box {
-  margin-top: 20px;
   padding: 10px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Card Image Styles */
+.card-img-top {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+/* Card Title Styles */
+.card-title {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .card {
+    padding: 10px;
+  }
+
+  .card-img-top {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+/* Table Padding & Margin */
+.table-responsive {
+  margin-top: 20px;
+}
+
+/* Adjust Text Center */
+.text-center {
   text-align: center;
 }
-.search-box .btn:hover{
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+
+/* Customize Table Rows */
+.service td {
+  padding: 20px;
 }
+
+/* Active Link Style */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Text */
+.service img {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .card {
+    padding: 10px;
+  }
+
+  .card-img-top {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Text */
+.country img {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+
+/* enterprice */
+/* Container and row styling for no extra space */
+
 .nav-tabs .nav-link.active {
   background-color: #9948c5;
   color: #fff;
@@ -440,7 +512,7 @@ li {
 .nav-link,.nav-link:hover{
   color: #000000;
 }
-/* enterprice */
+
 .btn-orange {
   background-color: #9948c5;
   color: white;
@@ -610,10 +682,10 @@ li {
 .download-section {
   background-color: #9948c5;
   color: white;
-  padding: 30px;
+  padding: 0px;
   display: flex;
   border-radius: 30px;
-  margin: 95px;
+  margin: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -622,59 +694,115 @@ li {
 }
 .download-buttons img {
   margin-right: 15px;
-  height: 40px;
+  height: 20px;
+}
+.down-img img {
+  width: 100%;  /* Ensure the image takes up 100% of the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image content fits inside the container without being distorted */
+}
+
+/* Make the section responsive for mobile screens */
+@media (max-width: 767px) {
+  .download-section {
+    flex-direction: column;  /* Stack image and text vertically on smaller screens */
+    text-align: center;
+  }
+
+  .down-img {
+    margin-top: 20px; /* Add spacing on top of the image */
+    width: 80%; /* Control the width of the image on mobile for better fit */
+  }
+
+  .download-buttons {
+    flex-direction: column;  /* Stack buttons vertically on mobile */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .down-img {
+    width: 90%; /* Slightly smaller width on extra-small screens */
+  }
 }
 
 /* footer */
+/* Footer */
 .footer {
   background-color: #33015ae0;
   padding: 40px 20px;
   color: white;
 }
+
+/* Logo and Title Styling */
 .footer-logo-title {
   display: flex; /* Enable Flexbox */
-  align-items: center; /* Vertically center the logo and title */
+  align-items: center;
 }
+
 .logo-footer {
   width: 180px;
   height: 85px;
-  /* No need for display: flex here */
 }
+
 .footer-title {
   flex: 1; /* Allow the title to take up remaining space */
-  margin: 0; /* Remove default margin for h5 */
+  margin: 0; 
+  font-size: 30px;/* Remove default margin for h5 */
 }
+
+/* Column Title Styling */
 .footer .column-title {
   font-weight: bold;
   margin-bottom: 15px;
 }
-
+.column-title{
+  font-size: 25px;
+}
+/* Unordered List Styling */
 .footer ul {
   list-style: none;
   padding: 0;
 }
+
 .footer ul li {
   margin-bottom: 10px;
 }
+
 .footer ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
 .footer ul li a:hover {
   text-decoration: underline;
 }
+
+/* Social Icons Styling */
+.social-icons {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+
 .social-icons img {
   width: 30px;
   margin-right: 10px;
 }
+
+/* Footer Language Selector */
 .footer .language-selector {
   margin-top: 20px;
 }
+
+/* Footer Note */
 .footer .note {
   font-size: 12px;
   color: gray;
   margin-top: 20px;
 }
+
+
 /* Media Query for smaller screens */
 @media (max-width: 766px) {
   .work-row {
@@ -700,58 +828,3 @@ li {
     font-size: 0.95rem;
   }
 }
-
-
-    /* body {
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-
-    .logo-wrapper {
-      position: relative;
-      width: 200px;
-      height: 200px;
-    }
-
-    .logo-wrapper .ring {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: linear-gradient(45deg, #8b5cf6, #ec4899);
-      animation: spin 4s linear infinite;
-      opacity: 0.9;
-    }
-
-    .logo-wrapper .ring:nth-child(2) {
-      transform: rotate(120deg);
-      animation-delay: -1s;
-    }
-
-    .logo-wrapper .ring:nth-child(3) {
-      transform: rotate(240deg);
-      animation-delay: -2s;
-    }
-
-    .logo-center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 60px;
-      height: 60px;
-      background: #fff;
-      border-radius: 50%;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    } */
