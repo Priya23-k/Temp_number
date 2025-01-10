@@ -14,6 +14,10 @@ body {
 .shadow-lg {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+.select-container .form-card {
+  position: absolute;
+  z-index: 10; /* Higher than surrounding elements */
+}
 
 .form-select-lg {
   padding: 1rem;
@@ -43,4 +47,50 @@ body {
 .display-4 {
   font-size: 2.5rem;
   font-weight: 700;
+}
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-button {
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ced4da;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef;
 }

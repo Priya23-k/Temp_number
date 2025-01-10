@@ -32,13 +32,12 @@
           <div class="mb-3">
             <label for="service" class="form-label">Service</label>
             <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-gear"></i> <!-- Icon for Service -->
-              </span>
-              <select id="service" class="form-select">
-                <option selected>Service</option>
-                <option value="1">Service 1</option>
-                <option value="2">Service 2</option>
+              <span class="input-group-text"><i class="fa-solid fa-gear"></i></span>
+              <!-- Dropdown container -->
+              <select id="try_service" class="form-select">
+                <option value="" disabled selected>Select a service</option>
+                <option value="telegram">Telegram</option>
+                <option value="whatsapp">WhatsApp</option>
               </select>
             </div>
           </div>
@@ -47,13 +46,12 @@
           <div class="mb-3">
             <label for="country" class="form-label">Country</label>
             <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-earth-americas"></i> <!-- Icon for Country -->
-              </span>
-              <select id="country" class="form-select">
-                <option selected>Country</option>
-                <option value="1">USA</option>
-                <option value="2">Canada</option>
+              <span class="input-group-text"><i class="fa-solid fa-gear"></i></span>
+              <!-- Dropdown container -->
+              <select id="try_country" class="form-select">
+                <option value="" disabled selected>Select a country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
               </select>
             </div>
           </div>
@@ -373,6 +371,7 @@
     </div>
   </div>
   <div id="footer"></div>
+  
   <script src="/assets/js/script.js"></script>
   <script src="/assets/js/service.js"></script>
   <script src="/assets/js/country.js"></script>

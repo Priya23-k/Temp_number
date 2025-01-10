@@ -45,7 +45,9 @@ body {
   .nav-link, .btn, .lang {
     font-weight: 500; 
   }
-  
+  nav{
+    position: relative;
+  }
   .navbar-nav .btn-primary {
     background-color: #9948c5;
     border: none;

@@ -48,6 +48,16 @@ function fetchCountryData() {
       } else {
         console.error('Country not found in the data file');
       }
+      const placeholders = document.getElementById('try_country');
+        if (placeholders) {
+          let out = `<option selected>${defaultOptionText}</option>`;
+          for (let country of data.countries) {
+            out += 
+              <option value="${country.coutryname}">${country.countryname}</option>
+            ;
+          }
+          placeholders.innerHTML = out;
+        }
     })
     .catch(error => {
       console.error('Error fetching country data:', error);

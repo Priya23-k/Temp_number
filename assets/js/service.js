@@ -33,6 +33,24 @@ if (!serviceId) {
         document.querySelector('.servicedescription').textContent = "The requested service could not be located.";
         console.error("Service not found!");
       }
+
+      // Generate the service list dynamically
+      const placeholder = document.getElementById('try_service');
+        if (placeholder) {
+          // Find the selected service by ID or use a default value
+          const selectedService = data.services.find(s => s.id.toString() === serviceId);
+
+          // Dynamically generate the dropdown options
+          let out = `<option selected>${selectedService ? selectedService.servicename : "Select a Service"}</option>`;
+          for (let service of data.services) {
+            if (!selectedService || service.servicename !== selectedService.servicename) {
+              out += `
+                <option value="${service.servicename}">${service.servicename}</option>
+              `;
+            }
+          }
+          placeholder.innerHTML = out;
+        }
     })
     .catch(error => {
       console.error('Error loading data:', error);
