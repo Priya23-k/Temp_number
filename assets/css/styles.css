@@ -47,6 +47,7 @@ body {
   }
   nav{
     position: relative;
+    z-index: 10;
   }
   .navbar-nav .btn-primary {
     background-color: #9948c5;
@@ -62,17 +63,23 @@ body {
     background-color: #eeeeee;
   }
   
+  .dropdown-menu {
+    max-height: none; /* Allow the dropdown to expand without restriction */
+    overflow: hidden; /* Prevent scrolling within the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+  }
+  
   .dropdown-item {
-    font-weight: 500; 
-    color: #000; 
+    font-weight: 500;
+    color: #000;
   }
   
   .dropdown-item:hover {
     background-color: #eeeeee;
-    color: #9948c5; 
+    color: #9948c5;
   }
   
-  /* Additional styles for responsiveness */
+  /* Navbar responsiveness */
   .navbar-nav {
     display: flex;
     flex-wrap: wrap;
@@ -87,8 +94,18 @@ body {
   .navbar-toggler-icon {
     background-color: #ffffff;
   }
+  .dropdown-menu {
+    max-height: 300px; /* Set a fixed maximum height */
+    overflow-y: auto; /* Enables scrolling within the dropdown only when necessary */
+    scrollbar-width: none; /* For modern browsers, hides the scrollbar */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
   
-/* section */
+  .dropdown-menu::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for WebKit-based browsers */
+  }
+  
+  /* section */
 /* Section Title and Subtitle */
 .section-title {
   font-size: 2rem;

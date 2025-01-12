@@ -16,7 +16,7 @@ body {
 }
 .select-container .form-card {
   position: absolute;
-  z-index: 10; /* Higher than surrounding elements */
+  z-index: 20; /* Higher than surrounding elements */
 }
 
 .form-select-lg {
