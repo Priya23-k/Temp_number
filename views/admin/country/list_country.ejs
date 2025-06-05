@@ -1,0 +1,40 @@
+<div class="country-list-container">
+    <h2>Country List</h2>
+    <table class="country-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Country Name</th>
+                <th>Code</th>
+                <th>Country Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (countries.length > 0) { %>
+                <% countries.forEach(country => { %>
+                    <tr>
+                        <td><%= country._id %></td>
+                        <td><%= country.name %></td>
+                        <td><%= country.code %></td>
+                        <td>
+                            <img src="/uploads/<%= country.flag %>" alt="Country Image" width="50">
+                        </td>
+                        <td>
+                            <a href="/admin/country/edit/<%= country._id %>" class="edit-btn">Edit</a>
+                            <a href="/admin/country/delete/<%= country._id %>" class="del-btn">Delete</a>
+                        </td>
+                    </tr>
+                <% }) %>
+            <% } else { %>
+                <tr>
+                    <td colspan="5">No countries found</td>
+                </tr>
+            <% } %>
+        </tbody>        
+    </table>
+    <div class="btn-container">
+        <button class="add-country-btn" onclick="window.location.href='/admin/country/add'">Add Country</button>
+    </div>
+    
+</div>

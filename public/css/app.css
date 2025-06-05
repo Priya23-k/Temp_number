@@ -1,0 +1,316 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .step-container {
+    max-width: 500px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .step-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #9945c5;
+    margin-bottom: 10px;
+  }
+
+  .progress-bar {
+    background-color: #9945c5;
+  }
+
+  .form-control {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(153, 69, 197, 0.5);
+    border-color: #9945c5;
+  }
+
+  .form-check-label {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .btn-orange {
+    background-color: #9945c5;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-orange:hover {
+    background-color: #893fb1;
+    color: #fff;
+  }
+
+  .btn-outline-secondary {
+    border-radius: 6px;
+    /* padding: 10px 15px; */
+    font-weight: 500;
+    color: #555;
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+
+  /* .outer-container {
+    padding: 15px px;
+  } */
+
+  .text-center {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .d-flex {
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+/* scrollbar */
+#serviceList, #countryList {
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;  /* Enables vertical scrolling */
+  border: 1px solid #ddd; /* Optional: Adds a border for better visibility */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Optional: Style for scrollbar */
+#serviceList::-webkit-scrollbar, #country::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+#serviceList::-webkit-scrollbar-thumb, #country::-webkit-scrollbar-thumb {
+  background-color: #aaa; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+#serviceList::-webkit-scrollbar-track, #country::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+/* Navbar styles */
+.app-navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1001;
+  background: #ffffff !important; /* Force white background */
+  min-height: 56px; /* Ensure consistent height */
+}
+/* Sidebar position adjustment */
+
+/* PRO and Balance buttons */
+.app-pro,
+.app-balance {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* Sidebar styles */
+.app-sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 10;
+  right: -250px; /* Hidden by default */
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+.app-sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.app-sidebar-list li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.app-sidebar-list li a:hover {
+  background-color: #ddd;
+}
+
+.app-sidebar.active {
+  right: 0; /* Show sidebar */
+}
+/* Three dots menu toggle */
+.app-menu-toggle {
+  display: inline-block !important;
+  border: none !important;
+  background: none !important;
+  color: #666 !important;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  order: 3; /* Ensure it stays on the right */
+}
+
+/* Navbar container adjustments */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.app-buttons {
+  margin-left: auto;
+}
+
+/* Remove Bootstrap's default toggler visibility */
+.navbar-toggler {
+  display: none !important;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-brand {
+    font-size: 18px;
+  }
+
+  .app-pro,
+  .app-balance {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .app-menu-toggle {
+    padding: 0.25rem 0.5rem;
+  }
+}
+/* Icon styling */
+.app-sidebar-list li a i {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.app-sidebar-list li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+/* Hover effects */
+.app-sidebar-list li a:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+.app-sidebar-list li a:hover i {
+  color: #9945c5;
+}
+
+
+.list-group-item {
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue hover effect */
+  transform: scale(1.03); /* Slight pop effect */
+}
+
+.list-group-item.selected {
+  background-color: #007bff !important; /* Blue background for selected item */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* activation */
+.center {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(45deg, #78329e, #a1a1a1);
+  margin: 5px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}

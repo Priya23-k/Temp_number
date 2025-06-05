@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Number Navbar</title>
+  <link rel="icon" href="/image/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Corrected Path -->
+  <meta name="google-adsense-account" content="ca-pub-7967927643717482">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7967927643717482"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <%- include('../components/navbar') %>
+  <%- include('../components/scrollupbtn') %>
+  <!-- Left Text Section -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="section-title fw-bold">Temp Number Second Phone</h1>
+        <p class="subtitle">Receive SMS Online using Temporary Second Phone Numbers from all over the world</p>
+        <a href="/app/countries">
+          <button class="btn btn-primary-custom text-white btn-lg me-2 fs-6">Try Now →</button>
+      </a>
+        <button class="btn btn-outline-custom btn-lg fs-6"><i class="fa-solid fa-video m-1"></i>Watch video</button>
+      </div>
+      <!-- For Service List -->
+      <!-- <div id="serviceList" class="list-group"></div> -->
+
+      <!-- For Country List -->
+      <!-- <div id="country" class="list-group"></div> -->
+
+      <div class="col-md-6">
+        <div class="form-card mx-auto p-4 mt-4 w-75">
+          <form>
+            <!-- Service Field -->
+            <!-- Service Dropdown with Search -->
+            <div class="mb-3">
+              <label for="service" class="form-label">Service</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-gear"></i> 
+                </span>
+                <!-- <input type="text" id="serviceSearch" class="form-control" placeholder="Search service..."> -->
+                <select id="serviceDropdown" class="form-select">
+                  <option selected disabled>Select a service</option> <!-- Options will be dynamically added -->
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="countryDropdown" class="form-label">Country</label>
+              <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-globe"></i> 
+                  </span>
+                <select id="countryDropdown" class="form-select">
+                  <option selected disabled>Select a country</option> <!-- Options will be dynamically added -->
+                </select>
+              </div>
+            </div>
+
+            <!-- Selected Information -->
+            <!-- <div>
+              <p>Selected Service: <span id="selectedService">N/A</span></p>
+              <p>Selected Country: <span id="selectedCountry">N/A</span></p>
+              <p>Price: <span id="countryPrice">N/A</span></p>
+            </div> -->
+            <!-- Submit Button -->
+            <button id="appButton" type="button" class="btn btn-primary-custom text-white btn-lg w-100 fs-6" >
+              Get Number →
+          </button>
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- stars Section -->
+  <div class="container mt-5 pb-5 ">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="testimonial-card d-flex align-items-center">
+          <!-- Star Ratings -->
+          <div class="me-4">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="mt-2 mb-0">500,000+ downloads</p>
+          </div>
+          <!-- Testimonial Text -->
+          <div>
+            <h5><strong>Trusted by more than 100,000 paid customers and counting...</strong></h5>
+            <p class="text-muted">
+              Despite the widely recognized challenge of providing numbers on real SIM cards, our
+              service ensures that you receive premium, paid numbers with the highest possible
+              success rates for receiving SMS messages in the market.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features Section -->
+  <div class="container-fluid py-2 bg-custom-blue mt-5">
+    <div class="features-section mt-5" id="feature">
+      <h3 class="fw-bold">Features</h3>
+      <p class="text-muted">
+        Temp Number offers short-term usage phone numbers from different<br> countries to receive SMS
+        messages at fair and affordable prices.
+      </p>
+    </div>
+    <div class="row g-4 p-5">
+      <!-- First Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-purple">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="feature-heading">Global Number Selection</h3>
+          <p class="feature-description">
+            Pick your number from a pool of thousands of different numbers worldwide.
+          </p>
+        </div>
+      </div>
+      <!-- Second Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-pink">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3 class="feature-heading">Innovative Calling Features</h3>
+          <p class="feature-description">
+            The app encompasses multiple features like call forwarding, ACW, call recording, etc.
+          </p>
+        </div>
+      </div>
+      <!-- Third Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-orange">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3 class="feature-heading">Voicemail Facility</h3>
+          <p class="feature-description">
+            Includes voicemail functionality to ensure you never miss any messages.
+          </p>
+        </div>
+      </div>
+      <!-- Fourth Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-blue">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3 class="feature-heading">Seamless Communication</h3>
+          <p class="feature-description">
+            Enjoy smooth, hassle-free communication anytime, anywhere.
+          </p>
+        </div>
+      </div>
+      <!-- Fifth Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-yellow">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <h3 class="feature-heading">24/7 Support</h3>
+          <p class="feature-description">
+            Get round-the-clock support for all your queries and issues.
+          </p>
+        </div>
+      </div>
+      <!-- Sixth Feature -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-custom-pink-alt">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h3 class="feature-heading">Advanced Technology</h3>
+          <p class="feature-description">
+            Leverage cutting-edge technology to enhance your experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- how it work -->
+  <div class="container py-5 mt-5">
+    <h1 class="work-section-title text-center fw-bold" id="how-it-works">How It Works</h1>
+
+    <div class="row m-4">
+      <!-- Inputs Column -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="work-box">
+          <div class="work-icon"><i class="fas fa-box"></i></div>
+          <h5>Inputs</h5>
+          <ul>
+            <li>Independent providers</li>
+            <li>Connectivity networks</li>
+            <li>Owned infrastructure</li>
+          </ul>
+          <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <!-- Process Column -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="work-box">
+          <div class="work-icon"><i class="fas fa-cogs"></i></div>
+          <h5>Process</h5>
+          <ul>
+            <li>Service optimization</li>
+            <li>Quality assurance</li>
+            <li>Dynamic pricing</li>
+            <li>Infrastructure scaling</li>
+          </ul>
+          <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <!-- Outputs Column -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="work-box">
+          <div class="work-icon"><i class="fas fa-share-square"></i></div>
+          <h5>Outputs</h5>
+          <ul>
+            <li>Streamlined interface</li>
+            <li>Advanced APIs</li>
+            <li>Transparent billing</li>
+            <li>24/7 support</li>
+          </ul>
+          <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <!-- Happy Clients Column -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="work-box">
+          <div class="work-icon"><i class="fas fa-smile"></i></div>
+          <h5>Happy Clients</h5>
+          <ul>
+            <li>Cost-effective plans</li>
+            <li>Scalable solutions</li>
+            <li>Global reach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- calling -->
+  <!-- <div class="container py-5 bg-white rounded">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6 phone-section text-center mb-4 mb-md-0">
+        <img src="https://dialerhq.com/wp-content/uploads/2022/05/Lower-Calling-Costs.png" alt="Phone Illustration"
+          class="img-fluid rounded">
+      </div>
+      
+      <div class="col-md-6 text-section">
+        <h2 class="fw-bold">Lower Calling Costs</h2>
+        <p>
+          When you use our temp phone app, you can be certain of one thing lower communication costs.
+          All of our subscriptions are fairly priced and convenient for all kinds of user.
+        </p>
+      </div>
+    </div>
+  </div> -->
+  <!-- SIM Card  -->
+  <div class="sim-container py-5 mt-5 mx-auto">
+    <h1 class="sim-title fw-bold">Real SIM vs Virtual Numbers</h1>
+    <p class="sim-subtitle">
+      There is a significant difference between real SIM cards and virtual numbers (VoIP) when it comes to SMS
+      activation and verifications.
+    </p>
+    <div class="card">
+      <div class="card-header d-flex">
+        <div class="col-6 fw-bold">Feature</div>
+        <div class="col-3 fw-bold">Real SIM</div>
+        <div class="col-3 fw-bold">Virtual</div>
+      </div>
+      <div class="card-body">
+        <div class="row border-bottom py-2">
+          <div class="col-6">A real SIM card in a real physical location</div>
+          <div class="col-3"><i class="fa-solid fa-check sim-check-icon"></i></div>
+          <div class="col-3"><i class="fa-solid fa-xmark sim-cross-icon"></i></div>
+        </div>
+        <div class="row border-bottom py-2">
+          <div class="col-6">Recognized as a real user number</div>
+          <div class="col-3"><i class="fa-solid fa-check sim-check-icon"></i></div>
+          <div class="col-3"><i class="fa-solid fa-xmark sim-cross-icon"></i></div>
+        </div>
+        <div class="row border-bottom py-2">
+          <div class="col-6">Numbers are private and are not publicly accessible</div>
+          <div class="col-3"><i class="fa-solid fa-check sim-check-icon"></i></div>
+          <div class="col-3"><i class="fa-solid fa-xmark sim-cross-icon"></i></div>
+        </div>
+        <div class="row py-2">
+          <div class="col-6">Acceptable in many apps and services</div>
+          <div class="col-3"><i class="fa-solid fa-check sim-check-icon"></i></div>
+          <div class="col-3"><i class="fa-solid fa-xmark sim-cross-icon"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- use case -->
+  <div class="container-fluid bg-custom-purple py-5" id="usecase">
+    <h2 class="use-title fw-bold">Use Cases</h2>
+    <p class="text-center text-muted mb-0">Check out some popular use cases of Temp Number</p>
+
+    <div class="row g-4 p-5">
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase1.svg" alt="Icon"></div>
+          <h5 class="use-card-title">SMS Verification</h5>
+          <p class="card-text">Access to multiple phone numbers with zero efforts to verify online accounts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase2.svg" alt="Icon"></div>
+          <h5 class="use-card-title">Deliverability Testing</h5>
+          <p class="card-text">Test your website/app SMS recipes and OTP confirmations at scale.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase3.svg" alt="Icon"></div>
+          <h5 class="use-card-title">Manual Testing</h5>
+          <p class="card-text">A "must-have" tool for manual testers. No more personal numbers for QA tests.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase4.svg" alt="Icon"></div>
+          <h5 class="use-card-title">Monitoring</h5>
+          <p class="card-text">Ensure your reliability on production services by performing periodic SMS deliverability
+            tests.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase5.svg" alt="Icon"></div>
+          <h5 class="use-card-title">Fast Access</h5>
+          <p class="card-text">Get access to real phone numbers fast from many countries and various cellular operators.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="use-card p-4 text-center">
+          <div class="use-card-icon"><img src="/image/usecase6.svg" alt="Icon"></div>
+          <h5 class="use-card-title">Hide Real Number</h5>
+          <p class="card-text">Use disposable numbers as a shield against threats like SMS spam, phishing, or account
+            takeover attempts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- service and country -->
+  
+  <!-- enterprice -->
+  <div class="container py-5" id="enterprise">
+    <!-- Enterprise Clients Section -->
+    <div class="row mb-5">
+      <div class="col-12 col-lg-6">
+        <!-- Heading -->
+        <h2 class="text-center text-lg-start fw-bold">Enterprise Clients</h2>
+
+        <!-- Paragraph -->
+        <!-- Paragraph with lighter text -->
+        <p class="text-center text-lg-start text-muted">
+          For enterprise clients and corporations, we offer a range of services and tools
+          to streamline business processes.
+          <br><br>Access to global benchmarks
+          <br>Exclusive plans and dedicated support
+          <br>Financial and corporate compliance
+        </p>
+
+        <!-- Button -->
+        <div class="text-center text-lg-start mb-3">
+          <a href="/contactus" class="btn btn-orange">Contact Us -></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="client-container">
+          <div class="client-box">
+            <img src="/image/google.webp" alt="Google">
+          </div>
+          <div class="client-box">
+            <img src="/image/ibm.webp" alt="IBM">
+          </div>
+          <div class="client-box">
+            <img src="/image/oracle.webp" alt="Oracle">
+          </div>
+          <div class="client-box">
+            <img src="/image/coinbase.webp" alt="Coinbase">
+          </div>
+          <div class="client-box">
+            <img src="/image/amazon.webp" alt="Amazon">
+          </div>
+          <div class="client-box">
+            <img src="/image/meta.webp" alt="Meta">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Powerful API Section -->
+    <!-- <div class="row mb-5 align-items-center">
+      <div class="col-lg-6">
+        <img src="/image/api.png" alt="API Preview" class="img-fluid">
+      </div>
+      <div class="col-12 col-lg-6 p-3 p-lg-5">
+        
+        <h3 class="text-center text-lg-start mb-3 fw-bold">Powerful API</h3>
+
+        <p class="text-center text-lg-start mb-4 text-muted">
+          No matter how many verifications you need, the API makes it easy to automate workflows.
+          <br><br>Designed for developers
+          <br>Scalable for any size
+          <br>Built for performance
+        </p>
+
+        <div class="text-center text-lg-start">
+          <a href="api.ejs" class="btn btn-orange">API Docs -></a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Partnership Section -->
+    <!-- <div class="container py-5" id="partnership">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+         
+          <h2 class="text-center text-lg-start fw-bold">Partnership</h2>
+
+         
+          <p class="text-center text-lg-start text-muted">
+            Partnerships help businesses and organizations create strong foundations.
+            <br><br>Support for collaborations
+            <br>Affiliate and share options
+          </p>
+
+          <div class="text-center text-lg-start mb-5">
+            <a href="/contactus" class="btn btn-orange">Contact Us -&gt;</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <ul class="nav nav-tabs" id="tabMenu" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="suppliers-tab" data-bs-toggle="tab" data-bs-target="#suppliers"
+                type="button" role="tab" aria-controls="suppliers" aria-selected="true">Suppliers</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="software-owners-tab" data-bs-toggle="tab" data-bs-target="#software-owners"
+                type="button" role="tab" aria-controls="software-owners" aria-selected="false">Software Owners</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="affiliates-tab" data-bs-toggle="tab" data-bs-target="#affiliates"
+                type="button" role="tab" aria-controls="affiliates" aria-selected="false">Affiliates</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="tabContent">
+            <div class="tab-pane fade show active" id="suppliers" role="tabpanel" aria-labelledby="suppliers-tab">
+             
+              <p>Please contact us if you are a supplier.</p>
+              <img src="/image/Suppliers.png" alt="Suppliers" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="software-owners" role="tabpanel" aria-labelledby="software-owners-tab">
+              <p>Details for software owners will be displayed here.</p>
+              <img src="https://via.placeholder.com/400x300" alt="Software Owners" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="affiliates" role="tabpanel" aria-labelledby="affiliates-tab">
+              <p>Details for affiliates will be displayed here.</p>
+              <img src="https://via.placeholder.com/400x300" alt="Affiliates" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <!-- FAQ -->
+  <div class="container my-5 py-5" id="faq">
+    <div class="faq-header text-center p-4 fs-2 fw-bold">Frequently Asked Questions</div>
+    <div class="faq-card">
+      <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
+        aria-controls="faq1">
+        Can I get a temporary phone number with DialerHQ?
+        <span class="float-end">+</span>
+      </div>
+      <div id="faq1" class="collapse show faq-answer">
+        Yes, DialerHQ is a leading temporary number provider that offers temporary or second numbers for 80+ countries
+        spanning continents.
+      </div>
+    </div>
+    <div class="faq-card">
+      <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2" aria-controls="faq2">
+        What is the pricing structure for temporary phone numbers with DialerHQ?
+        <span class="float-end">+</span>
+      </div>
+      <div id="faq2" class="collapse faq-answer">
+        Pricing structures vary depending on the country and duration of use. Check the DialerHQ website for detailed
+        pricing.
+      </div>
+    </div>
+    <div class="faq-card">
+      <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3" aria-controls="faq3">
+        How reliable are DialerHQ's services for temporary phone numbers?
+        <span class="float-end">+</span>
+      </div>
+      <div id="faq3" class="collapse faq-answer">
+        DialerHQ provides highly reliable services with excellent call quality and global coverage.
+      </div>
+    </div>
+    <div class="faq-card">
+      <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4" aria-controls="faq4">
+        How do I set up a virtual phone number for temporary use with DialerHQ?
+        <span class="float-end">+</span>
+      </div>
+      <div id="faq4" class="collapse faq-answer">
+        Setting up a virtual phone number is easy and can be done through DialerHQ's user-friendly app or website.
+      </div>
+    </div>
+    <div class="faq-card">
+      <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq5" aria-controls="faq5">
+        What advanced features does DialerHQ offer for virtual phone numbers used temporarily?
+        <span class="float-end">+</span>
+      </div>
+      <div id="faq5" class="collapse faq-answer">
+        Advanced features include call forwarding, SMS forwarding, and voicemail options.
+      </div>
+    </div>
+  </div>
+  <!-- Download Section -->
+  <div class="download-section" id="download">
+    <div class="container">
+      <div class="row align-items-center text-center text-lg-start">
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <h2 class="fw-bold fs-1 mb-3">Download - Get it now</h2>
+          <p class="fs-6 mb-4">
+            With our easy-to-use interface, you can quickly visit or download a temporary number and have it up and
+            running in no time. So don't wait - get your temporary phone number today!
+          </p>
+          <div class="download-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center gap-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store"
+              class="img-fluid" style="height: 50px;">
+            <img src="image/playgorund.png"
+              alt="Google Play" class="img-fluid" style="height: 60px; margin-left: 33px;">
+            <img src="/image/Microsoft-Store.png" alt="Web Version" class="img-fluid"
+              style="height: 60px; ">
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-lg-6 col-md-12 down-img">
+          <img src="/image/download.png" alt="App Screenshot" class="down-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- feedback -->
+  <div class="feedback-section py-5 my-5 mb-5 bg-white rounded" id="feedback">
+    <h2 class="feedback-title">Our clients reviews</h2>
+    <p class="feedback-subtitle">Over 100,000 paid customers rely on our services and counting...</p>
+
+    <div class="container">
+      <div class="row g-4">
+        <!-- Tweets Card -->
+        <div class="col-md-4">
+          <div class="feedback-card">
+            <div class="feedback-icon">
+              <i class="bi bi-twitter"></i>
+            </div>
+            <h5 class="feedback-title">Tweets</h5>
+            <p class="feedback-comment">"Tremendous experience! Bitcoin withdrawals are fast and reliable."</p>
+            <a href="#" class="feedback-author">@CryptoFan123</a>
+          </div>
+        </div>
+
+        <!-- App Store Card -->
+        <div class="col-md-4">
+          <div class="feedback-card">
+            <div class="feedback-icon">
+              <i class="bi bi-apple"></i>
+            </div>
+            <h5 class="feedback-title">App Store</h5>
+            <p class="feedback-comment">"Excellent app! Customer service is fantastic."</p>
+            <span class="feedback-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+
+        <!-- Play Store Card -->
+        <div class="col-md-4">
+          <div class="feedback-card">
+            <div class="feedback-icon">
+              <i class="bi bi-google-play"></i>
+            </div>
+            <h5 class="feedback-title">Play Store</h5>
+            <p class="feedback-comment">"Fast, reliable, and user-friendly. Highly recommended!"</p>
+            <span class="feedback-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <%- include('../components/footer') %>  
+  
+  <!-- <script>
+    function redirectToTryNow(event) {
+       event.preventDefault(); // Prevent default form submission
+   
+       const serviceDropdown = document.getElementById("serviceDropdown");
+       const countryDropdown = document.getElementById("countryDropdown");
+   
+       if (!serviceDropdown || !countryDropdown) {
+           console.error("⚠️ Dropdown elements not found! Check your IDs.");
+           return;
+       }
+   
+       const selectedServiceId = serviceDropdown.value;
+       const selectedCountryId = countryDropdown.value;
+   
+       if (!selectedServiceId || !selectedCountryId) {
+           alert("⚠️ Please select both a service and a country before proceeding!");
+           return;
+       }
+   
+       // Get displayed names
+       const selectedServiceName = serviceDropdown.options[serviceDropdown.selectedIndex].text;
+       const fullCountryText = countryDropdown.options[countryDropdown.selectedIndex].text;
+       const selectedCountryName = fullCountryText.split(" - $")[0]; // Extract only the country name
+       const selectedPrice = countryDropdown.options[countryDropdown.selectedIndex].dataset.price;
+   
+       // Store values securely in sessionStorage
+       sessionStorage.setItem("selectedService", selectedServiceName);
+       sessionStorage.setItem("selectedCountry", selectedCountryName);
+       sessionStorage.setItem("selectedPrice", selectedPrice);
+   
+       // Redirect to Step 3
+       console.log("✅ Data stored in sessionStorage. Redirecting securely...");
+       window.location.href = "/try_now?step=3"; // No sensitive data in the URL
+   }
+     </script> -->
+
+ 
+  <script src="/js/script.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<div class="service-container">
+    <h1>Add New Service</h1>
+    <form action="/admin/service/add" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="serviceName">Service Name</label>
+            <input type="text" id="serviceName" name="serviceName" required placeholder="Enter service name" />
+        </div>
+
+        <div class="form-group">
+            <label for="serviceId">Service ID</label>
+            <input type="text" id="serviceId" name="serviceId" required placeholder="Enter service ID" />
+        </div>
+
+        <div class="form-group">
+            <label for="serviceImage">Service Image</label>
+            <input type="file" id="serviceImage" name="serviceImage" accept="image/*" required />
+        </div>
+
+        <div class="form-group">
+            <label for="serviceDescription">Service Description</label>
+            <textarea id="serviceDescription" name="serviceDescription" rows="4" required placeholder="Enter service description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Add Service</button>
+        </div>
+    </form>
+</div>

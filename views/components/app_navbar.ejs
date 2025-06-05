@@ -1,0 +1,65 @@
+<!-- Navbar -->
+<nav class="app-navbar navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Brand Logo -->
+        <a class="app-brand navbar-brand d-flex align-items-center" href="/">
+            <img src="/image/logo.png" alt="Temp Number" class="logo me-2">
+            <div>
+                <strong>Temp Number</strong>
+            </div>
+        </a>
+      <!-- PRO and Balance Buttons -->
+      <div class="app-buttons d-flex align-items-center ms-auto">
+        <button class="app-pro btn btn-outline-primary me-2">PRO</button>
+        <a href="/app/payment">
+            <button class="app-balance btn btn-outline-secondary me-2">
+                Balance: $<%= typeof balance !== 'undefined' ? balance : 0 %>
+            </button>
+        </a>
+      </div>
+
+      <!-- Three Dots Menu Toggle (Always visible) -->
+      <button class="app-menu-toggle" type="button" id="appMenuToggle">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+    </div>
+</nav>
+<!-- Sidebar -->
+<div class="app-sidebar" id="appSidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+    </div>
+    <ul class="app-sidebar-list list-unstyled">
+      <li>
+        <a href="/app/countries">
+          <i class="fas fa-plus-circle me-2"></i>
+          Order New
+        </a>
+      </li>
+    
+      <li>
+        <a href="/app/payment">
+          <i class="fas fa-wallet me-2"></i>
+          Funds
+        </a>
+      </li>
+      <li>
+        <a href="/app/transactions">
+          <i class="fas fa-exchange-alt me-2"></i>
+          Transactions
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-question-circle me-2"></i>
+          Help
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-bell me-2"></i>
+          Notifications
+        </a>
+      </li>
+    </ul>
+  </div>

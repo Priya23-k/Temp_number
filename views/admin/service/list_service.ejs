@@ -1,0 +1,36 @@
+<div class="service-container">
+    <h2>Services List</h2>
+    <table class="service-table">
+        <thead>
+            <tr>
+                <th>Service Name</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% services.forEach(service => { %>
+                <tr>
+                    <td><%= service.serviceName %></td>
+                    <td><%= service.serviceDescription %></td>
+                    <td>
+                        <% if (service.serviceImage) { %>
+                            <img src="/uploads/<%= service.serviceImage %>" alt="Service Image" width="50">
+                        <% } else { %>
+                            No Image
+                        <% } %>
+                    </td>
+                    <td>
+                        <a href="/admin/service/edit/<%= service._id %>" class="edit-btn">Edit</a>
+                        <a href="/admin/service/delete/<%= service._id %>" class="del-btn">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <div class="btn-container">
+        <button class="add-service-btn" onclick="window.location.href='/admin/service/add'">Add Service</button>
+    </div>
+    
+</div>

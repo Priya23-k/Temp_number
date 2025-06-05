@@ -1,0 +1,117 @@
+<div class="faq-container">
+    <h2>FAQ List</h2>
+    <table class="faq-table">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% faqs.forEach(faq => { %>
+                <tr>
+                    <td><%= faq.question %></td>
+                    <td><%= faq.answer %></td>
+                    <td>
+                        <button class="edit-btn" onclick="openEditModal('<%= faq._id %>', '<%= faq.question %>', '<%= faq.answer %>')">Edit</button>
+                        <a href="/admin/faq/delete/<%= faq._id %>" class="del-btn" onclick="return confirm('Are you sure?');">Delete</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <!-- Add FAQ Button -->
+    <div class="btn-container">
+        <button class="add-faq-btn" onclick="window.location.href='/admin/faq/add'">Add New FAQ</button>
+    </div>
+</div>
+
+<!-- Edit FAQ Modal -->
+<div id="editFaqModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeEditModal()">&times;</span>
+        <h2>Edit FAQ</h2>
+        <form id="editFaqForm">
+            <input type="hidden" id="faqId" name="faqId">
+            <div class="form-group">
+                <label for="editQuestion">Question:</label>
+                <input type="text" id="editQuestion" name="question" required>
+            </div>
+            <div class="form-group">
+                <label for="editAnswer">Answer:</label>
+                <textarea id="editAnswer" name="answer" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Update FAQ</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Styles -->
+<style>
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        position: relative;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+</style>
+<script>
+   function openEditModal(id, question, answer) {
+    console.log("Opening modal for:", id, question, answer); // Debugging
+    document.getElementById("faqId").value = id;
+    document.getElementById("editQuestion").value = question;
+    document.getElementById("editAnswer").value = answer;
+    document.getElementById("editFaqModal").style.display = "flex";
+}
+
+
+    function closeEditModal() {
+        document.getElementById("editFaqModal").style.display = "none";
+    }
+
+    document.getElementById("editFaqForm").addEventListener("submit", async function(event) {
+        event.preventDefault();
+
+        const id = document.getElementById("faqId").value;
+        const question = document.getElementById("editQuestion").value;
+        const answer = document.getElementById("editAnswer").value;
+
+        const response = await fetch(`/admin/faq/edit/${id}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question, answer })
+        });
+
+        if (response.ok) {
+            alert("FAQ updated successfully!");
+            location.reload();
+        } else {
+            alert("Error updating FAQ!");
+        }
+    });
+</script>

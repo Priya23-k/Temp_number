@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" href="/image/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  
+    
+  <%- include('../../components/app_navbar') %>
+
+  <!-- Alert container -->
+  <div id="alert-container" class="container mt-3"></div>
+
+  <div class="login-container mt-3">
+    <div class="heading">Sign In</div>
+    
+    <form id="login-form" class="form">
+      <input class="input" type="email" name="email" id="email" placeholder="E-mail" >
+      <input class="input" type="password" name="password" id="password" placeholder="Password" >
+
+      <span class="forgot-password"><a href="#">Forgot Password?</a></span>
+      <input class="login-button" type="submit" value="Sign In">
+    </form>
+    
+    <div class="signup-link">
+      <span>Don't have an account?</span>
+      <a href="/app/signup">Sign Up</a>
+    </div>
+  </div>
+
+  <script>
+    const alertContainer = document.getElementById("alert-container");
+
+    function showAlert(message, type = "danger") {
+      const alertBox = document.createElement("div");
+      alertBox.className = `alert alert-${type} alert-dismissible fade show`;
+      alertBox.role = "alert";
+      alertBox.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      `;
+
+      alertContainer.innerHTML = "";
+      alertContainer.appendChild(alertBox);
+
+      // Auto-dismiss after 5 seconds
+      setTimeout(() => {
+        alertBox.classList.remove("show"); // triggers fade
+        alertBox.classList.add("hide");
+        setTimeout(() => {
+          if (alertBox.parentElement) {
+            alertBox.remove(); // fully remove from DOM
+          }
+        }, 500); // wait for fade-out animation
+      }, 5000); // 5 seconds before fade starts
+    }
+
+
+    document.getElementById("login-form").addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      // Simple email regex
+      const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+      if (!email || !password) {
+        showAlert("Please fill in both fields.");
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        showAlert("Please enter a valid email address.");
+        return;
+      }
+
+      try {
+        const response = await fetch('/app/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          document.cookie = `token=${result.token}; path=/;`;
+          localStorage.setItem('token', result.token);
+          localStorage.setItem('customer', JSON.stringify(result.customer));
+          window.location.href = '/';
+        } else {
+          if (result.error === "Invalid credentials") {
+            showAlert("Invalid email or password.");
+          } else if (result.error === "User not found") {
+            showAlert("User does not exist. Please sign up first.");
+          } else {
+            showAlert(result.error || "Login failed. Try again.");
+          }
+        }
+      } catch (error) {
+        console.error("Login request failed:", error);
+        showAlert("Server error. Please try again later.");
+      }
+    });
+  </script>
+
+  <script src="/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

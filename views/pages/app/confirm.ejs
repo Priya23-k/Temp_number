@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Number Navbar</title>
+  <link rel="icon" href="/image/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Corrected Path -->
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <%- include('../../components/app_navbar') %>
+  <div class="outer-container py-3 m-4">
+    <!-- Step 3: Confirm Selection -->
+    <div id="step3" class="step-container container">
+      <h2 class="step-title">Confirm Selection</h2>
+      <p class="text-center">Review your choices before proceeding</p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="mt-3">
+        <p><strong>Selected Service:</strong> <span id="confirmSelectedService">None</span></p>
+        <p><strong>Selected Country:</strong> <span id="confirmSelectedCountry">None</span></p>
+        <p><strong>Price:</strong> <span id="confirmSelectedPrice">$0.00</span></p>
+      </div>
+      <div class="d-flex justify-content-between mt-4">
+        <button class="btn btn-outline-secondary" onclick="window.location.href='/app/services'">&larr; Back</button>
+        <button class="btn btn-orange" onclick="checkLoginAndProceed()">Proceed to Payment</button>      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+  <script src="/js/app.js"></script>
+  <script>
+    // Function to display selected service and country
+    function displaySelectedOptions() {
+      const selectedService = localStorage.getItem('selectedService'); // Retrieve service name
+      const selectedCountry = localStorage.getItem('selectedCountry'); // Retrieve country name
+      const selectedPrice = localStorage.getItem('selectedPrice'); // Retrieve price
+  
+      // Display the selected service
+      if (selectedService) {
+        document.getElementById('confirmSelectedService').textContent = selectedService;
+      } else {
+        document.getElementById('confirmSelectedService').textContent = 'None';
+      }
+  
+      // Display the selected country
+      if (selectedCountry) {
+        document.getElementById('confirmSelectedCountry').textContent = selectedCountry;
+      } else {
+        document.getElementById('confirmSelectedCountry').textContent = 'None';
+      }
+  
+      // Display the selected price
+      if (selectedPrice) {
+        document.getElementById('confirmSelectedPrice').textContent = `$${selectedPrice}`;
+      } else {
+        document.getElementById('confirmSelectedPrice').textContent = '$0.00';
+      }
+    }
+  
+    // Call the function when the page loads
+    document.addEventListener('DOMContentLoaded', displaySelectedOptions);
+  </script>
+  <script>
+    async function checkLoginAndProceed() {
+    try {
+        // Fetch login status
+        const loginResponse = await fetch('/auth/status', { credentials: 'include' });
+        const loginData = await loginResponse.json();
+        console.log('Login Status:', loginData); // Debugging
+
+        if (!loginData.isLoggedIn) {
+            window.location.href = '/app/login'; // Redirect to login if not logged in
+            return;
+        }
+
+        // Fetch the user's balance
+        const balanceResponse = await fetch('/auth/balance', { credentials: 'include' });
+        const balanceData = await balanceResponse.json();
+        const balance = balanceData.balance || 0;
+
+        // Get the selected price from localStorage
+        const selectedPrice = parseFloat(localStorage.getItem('selectedPrice')) || 0;
+
+        console.log('Balance:', balance); // Debugging
+        console.log('Selected Price:', selectedPrice); // Debugging
+
+        // Compare balance with selected price
+        if (balance >= selectedPrice) {
+            window.location.href = '/app/activation'; // Redirect to activation page
+        } else {
+            window.location.href = '/app/payment'; // Redirect to payment page
+            alert('Insufficient balance. Please add funds to proceed.'); // Show alert
+        }
+    } catch (error) {
+        console.error('Error checking login status or balance:', error);
+        window.location.href = '/app/login'; // Fallback redirect
+    }
+}
+  </script>
+</body>
+</html>

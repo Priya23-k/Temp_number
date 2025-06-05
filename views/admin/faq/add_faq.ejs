@@ -1,0 +1,22 @@
+<div class="faq-container">
+    <h2>Add FAQ</h2>
+    <form action="/admin/faq/add" method="POST" class="faq-form">
+        <div class="form-group">
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question" required placeholder="Enter the question">
+        </div>
+
+        <div class="form-group">
+            <label for="answer">Answer:</label>
+            <textarea id="answer" name="answer" rows="4" required placeholder="Enter the answer"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Add FAQ</button>
+        </div>
+    </form>
+
+    <div class="btn-container">
+        <button onclick="window.location.href='/admin/faq/list'" class="back-btn">View FAQs</button>
+    </div>
+</div>
